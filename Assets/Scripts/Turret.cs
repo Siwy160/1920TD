@@ -6,13 +6,14 @@ public class Turret : MonoBehaviour
 {
     [Header("Stats")]
     public float range = 8f;
-    public float rotationSpeed = 360f;
+    public float rotationSpeed = 1f;
     public float fireRate = 1f;
     public float damage = 1f;
-    public float bulletSpeed = 10f;
+    public float bulletSpeed = 1f;
 
     [Header("Unity stuff")]
     public Transform partToRotate;
+    public Transform barrel;
     public GameObject bulletPrefab;
     public Transform firePoint;
 
@@ -58,13 +59,10 @@ public class Turret : MonoBehaviour
         {
             return;
         }
-        Vector3 direction = target.position - transform.position;
+        Vector3 direction = target.position - partToRotate.position;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
-        lookRotation.x = 0;
-        lookRotation.z = 0;
-        partToRotate.rotation = Quaternion.Slerp(partToRotate.rotation, lookRotation, Time.deltaTime * rotationSpeed);
-
-
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * rotationSpeed).eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
         if (fireCountdown <= 0f)
         {
             Shoot();
@@ -75,12 +73,13 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
-
-        GameObject bulletObject = GameObject.Instantiate(bulletPrefab, firePoint.position, partToRotate.rotation);
+        Vector3 direction = target.position - partToRotate.position;
+        Quaternion lookRotation = Quaternion.LookRotation(direction);
+        GameObject bulletObject = GameObject.Instantiate(bulletPrefab, firePoint.position, lookRotation);
         Bullet bullet = bulletObject.GetComponent<Bullet>();
         bullet.Damage = damage;
         bullet.Speed = bulletSpeed;
-        bullet.Direction = target.position - transform.position;
+        bullet.EnemyTag = enemyTag;
     }
 
     void OnDrawGizmosSelected()
