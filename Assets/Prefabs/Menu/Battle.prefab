@@ -88,6 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3546304228786178462}
+  - component: {fileID: 44358351}
   m_Layer: 0
   m_Name: Battle
   m_TagString: Untagged
@@ -112,6 +113,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44358351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3546304228786178463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81dddeb24c6faf04b82ae8dc2bdfc4c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _battleName: Radzymin
+  _namePlaceholder: {fileID: 3546304228084674574}
 --- !u!1 &3546304228821269289
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +169,8 @@ GameObject:
   - component: {fileID: 3546304228972310623}
   - component: {fileID: 3546304228972310592}
   - component: {fileID: 3546304228972310593}
-  - component: {fileID: 3546304228972310622}
+  - component: {fileID: 627970804516543651}
+  - component: {fileID: 3003159958392114435}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -223,8 +239,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &3546304228972310622
-SphereCollider:
+--- !u!65 &627970804516543651
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -234,8 +250,21 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.6244142, y: 0.9999997, z: 5.3816347}
+  m_Center: {x: 0.24442245, y: -0.00000006805271, z: 0.059166383}
+--- !u!114 &3003159958392114435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3546304228972310620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bce14daf611f424bb5361d226a92312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleSign: {fileID: 44358351}
 --- !u!95 &3546304229087435194
 Animator:
   serializedVersion: 3
@@ -420,21 +449,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6739551664164343107, guid: caa122b42f744e643b28e9d99029a446,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6739551664164343107, guid: caa122b42f744e643b28e9d99029a446,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6739551664164343107, guid: caa122b42f744e643b28e9d99029a446,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caa122b42f744e643b28e9d99029a446, type: 3}

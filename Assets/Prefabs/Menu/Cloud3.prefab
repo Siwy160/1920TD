@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9176461086681620066}
   - component: {fileID: 3199209220701528731}
   m_Layer: 0
-  m_Name: Cloud4
+  m_Name: Cloud3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 728cd90aa6dad3c4ea76997c47f20391, type: 2}
+  - {fileID: 2100000, guid: 0470bc7f2060ad348b6aafb3b2a4ac5f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
