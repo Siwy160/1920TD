@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &70237204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2141311036519669357, guid: fdf3630aac645334ab1650ad800e3509,
+    type: 3}
+  m_PrefabInstance: {fileID: 4979202823339328622}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee113d6e5d1039b438b49650da84eed8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &356421131
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ddd959d5af96604e913d892708645f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  map: {fileID: 70237204}
   _canvas: {fileID: 1880817366}
   battles:
   - _type: 0
