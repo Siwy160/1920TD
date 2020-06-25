@@ -5,6 +5,9 @@ namespace Game.Assets.Scripts.Menu
     public class MenuMap : MonoBehaviour
     {
 
+        [SerializeField]
+        private MenuUserInterface _ui;
+
         private BattleSignListener _currentBattleSelected;
 
         private void Update()
@@ -41,6 +44,7 @@ namespace Game.Assets.Scripts.Menu
                             _currentBattleSelected.OnBattleDeselected();
                         }
                         battleSignListener.OnBattleSelected();
+                        _ui.ShowBattleWidnow(battleSignListener.BattleType);
                         _currentBattleSelected = battleSignListener;
                     }
                 }
