@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class WaveSpawner : MonoBehaviour
     private float countdown = 2;
     private int waveNumber = 1;
     private float enemySpawnInterval = 0.5f;
+
+    public EnemyData enemyData;
+
+    public Text waveCountdownText;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +28,7 @@ public class WaveSpawner : MonoBehaviour
     {
 
         countdown -= Time.deltaTime;
+        waveCountdownText.text = ((int)countdown + 1).ToString();
         if (countdown <= 0f)
         {
             countdown = waveInternalSec;
@@ -42,7 +48,9 @@ public class WaveSpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
+        enemyPrefab.GetComponent<Enemy>().enemyData = enemyData;
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+
     }
 
     private int GetMonstersInCurrentWave()

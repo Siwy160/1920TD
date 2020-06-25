@@ -2,13 +2,16 @@
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float speed = 3f;
+    private float speed;
 
     private Transform target;
     private int waypointIndex;
 
+    public EnemyData enemyData;
+
     void Start()
     {
+        speed = enemyData.speed;
         SetNewTarget();
     }
 

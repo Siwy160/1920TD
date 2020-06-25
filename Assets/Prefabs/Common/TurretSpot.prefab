@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7635542153415328567}
   - component: {fileID: 3029470485451071329}
   - component: {fileID: 5788942381812124522}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1912956871659628339}
   - component: {fileID: -3132133305503737609}
-  m_Layer: 2
+  - component: {fileID: -1929037744384178376}
+  m_Layer: 0
   m_Name: TurretSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,3 +125,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1929037744384178376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6760990752278718326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c52fa77597d9a4c95bd002a87af7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedColor: {fileID: 2100000, guid: 032d17221f34fa645865e29b29676c62, type: 2}
