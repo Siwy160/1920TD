@@ -1,5 +1,6 @@
 namespace Game.Assets.Scripts.Menu
 {
+    using System;
     using UnityEngine;
 
     public class MenuMap : MonoBehaviour
@@ -10,10 +11,15 @@ namespace Game.Assets.Scripts.Menu
 
         private BattleSignListener _currentBattleSelected;
 
+        private bool enabled = true;
+
         private void Update()
         {
-            HandleTouchInput();
-            HandleMouseInput();
+            if (enabled)
+            {
+                HandleTouchInput();
+                HandleMouseInput();
+            }
         }
 
         private void HandleTouchInput()
@@ -26,6 +32,16 @@ namespace Game.Assets.Scripts.Menu
                     Debug.Log("Element hit " + hit.transform.gameObject.name);
                 }
             }
+        }
+
+        internal void Enabled()
+        {
+            this.enabled = true;
+        }
+
+        internal void Disable()
+        {
+            this.enabled = false;
         }
 
         private void HandleMouseInput()

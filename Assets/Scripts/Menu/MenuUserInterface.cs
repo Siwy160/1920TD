@@ -7,6 +7,9 @@ namespace Game.Assets.Scripts.Menu
     {
 
         [SerializeField]
+        private MenuMap map;
+
+        [SerializeField]
         private Canvas _canvas;
 
         [SerializeField]
@@ -20,8 +23,17 @@ namespace Game.Assets.Scripts.Menu
             battleWindow.gameObject.SetActive(false);
         }
 
+        private void Update()
+        {
+            if (!battleWindow.gameObject.active)
+            {
+                map.Enabled();
+            }
+        }
+
         internal void ShowBattleWidnow(BattleType battleType)
         {
+            map.Disable();
             BattleData data = Array.Find(battles, battle => battle.Type == battleType);
             if (data != null)
             {

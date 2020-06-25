@@ -2,7 +2,6 @@ namespace Game.Assets.Scripts.Menu
 {
     using TMPro;
     using UnityEngine;
-    using UnityEngine.UI;
 
     public class BattleWindow : MonoBehaviour
     {
