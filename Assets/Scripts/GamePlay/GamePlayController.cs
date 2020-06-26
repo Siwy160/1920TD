@@ -6,7 +6,7 @@ namespace Game.Assets.Scripts.GamePlay
     using global::GamePlay.Data;
     using UnityEngine;
 
-    public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener, MapControllerListener
+    public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener, MapControllerListener, RetryListener
     {
         [SerializeField]
         private TimeController _timeController;
@@ -21,6 +21,9 @@ namespace Game.Assets.Scripts.GamePlay
         private MapController _mapController;
 
         [SerializeField]
+        private WinWindow _winWindow;
+
+        [SerializeField]
         private GamePlayData _gamePlay;
 
         private WavesController _wavesController;
@@ -31,7 +34,14 @@ namespace Game.Assets.Scripts.GamePlay
             InitializeTimer();
             InitializeWaveSpawner();
             InitializeMapController();
+            InitializeWinWindow();
         }
+
+        private void InitializeWinWindow()
+        {
+            _winWindow.Listener = this;
+        }
+
         private void InitializeTimer()
         {
             _timeController.Listener = this;
@@ -82,13 +92,18 @@ namespace Game.Assets.Scripts.GamePlay
 
         private void ShowWinWindow()
         {
-            Debug.Log("Bitwa wygrana");
+            _winWindow.gameObject.SetActive(true);
         }
 
         private void StartBuildingMode()
         {
             _userInterface.ShowShop();
             _timeController.CountBuildingTime();
+        }
+
+        public void Retry()
+        {
+
         }
     }
 }
