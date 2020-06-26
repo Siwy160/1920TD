@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +5,9 @@ namespace Game.Assets.Scripts.UI
 {
     public class SoundButton : MonoBehaviour
     {
+
+        [SerializeField]
+        private AudioSource _onClickSound;
 
         [SerializeField]
         private Sprite _muteSprite;
@@ -30,6 +32,7 @@ namespace Game.Assets.Scripts.UI
         {
             if (soundButton != null)
             {
+                _onClickSound.Play();
                 if (isMuted)
                 {
                     AudioListener.volume = 0f;
