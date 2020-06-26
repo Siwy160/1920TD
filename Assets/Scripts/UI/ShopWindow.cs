@@ -15,6 +15,11 @@ namespace Game.Assets.Scripts.UI
 
         public void OnExitButtonClicked()
         {
+            if (_exitButtonClickedSound != null)
+            {
+                _exitButtonClickedSound.Play();
+            }
+            
             gameObject.SetActive(false);
         }
     }

@@ -4,6 +4,8 @@ namespace Game.Assets.Scripts.UI
 
     public class StartWindow : MonoBehaviour
     {
+        [SerializeField]
+        private AudioSource _startBattleSound;
 
         private StartBattleListener _listener;
 
@@ -18,6 +20,10 @@ namespace Game.Assets.Scripts.UI
         {
             if (_listener != null)
             {
+                if (_startBattleSound != null)
+                {
+                    _startBattleSound.Play();
+                }
                 gameObject.SetActive(false);
                 _listener.StartBattle();
             }
