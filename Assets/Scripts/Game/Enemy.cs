@@ -7,6 +7,10 @@ public class Enemy : HittableObject
     [SerializeField] private AudioSource movementSound;
     [SerializeField] private AudioSource deathSound;
 
+    [Header("Animation")]
+    [SerializeField] private float movementAnimationMultiplier = 1;
+    [SerializeField] private float deathAnimationMultiplier = 1;
+
     [Header("Stats")]
     [SerializeField] private float speed = 3f;
     [SerializeField] private float health = 10;
@@ -20,6 +24,8 @@ public class Enemy : HittableObject
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        animator.SetFloat("RunAnimationMultiplier", movementAnimationMultiplier);
+        animator.SetFloat("DeathAnimationMultiplier", deathAnimationMultiplier);
         SetNewTarget();
     }
 
