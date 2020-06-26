@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Game.Assets.Scripts.Menu
 {
-    public class MenuUserInterface : MonoBehaviour
+    public class MenuUserInterface : MonoBehaviour, BattleStartListener
     {
 
         [SerializeField]
@@ -20,6 +21,7 @@ namespace Game.Assets.Scripts.Menu
 
         private void Start()
         {
+            battleWindow.BattleStartListener = this;
             battleWindow.gameObject.SetActive(false);
         }
 
@@ -37,10 +39,18 @@ namespace Game.Assets.Scripts.Menu
             BattleData data = Array.Find(battles, battle => battle.Type == battleType);
             if (data != null)
             {
-
+                battleWindow.Type = data.Type;
                 battleWindow.SetHeaderText(data.Name);
                 battleWindow.SetDescription(data.Description);
                 battleWindow.gameObject.SetActive(true);
+            }
+        }
+
+        public void OnBattleStarted(BattleType type)
+        {
+            if (type == BattleType.RADZYMIN)
+            {
+                SceneManager.LoadScene("03Radzymin", LoadSceneMode.Single);
             }
         }
     }

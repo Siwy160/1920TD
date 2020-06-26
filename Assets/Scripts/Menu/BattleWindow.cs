@@ -23,10 +23,10 @@ namespace Game.Assets.Scripts.Menu
         [SerializeField]
         private string _buttonText;
 
-        private void Start()
-        {
-            //gameObject.SetActive(false);
-        }
+        private BattleType _type;
+        private BattleStartListener _battleStartListener;
+        public BattleStartListener BattleStartListener { get => _battleStartListener; set => _battleStartListener = value; }
+        public BattleType Type { set => _type = value; }
 
         public void OnCancelButtonClicked()
         {
@@ -35,7 +35,10 @@ namespace Game.Assets.Scripts.Menu
 
         public void OnButtonClicked()
         {
-
+            if (_battleStartListener != null)
+            {
+                _battleStartListener.OnBattleStarted(_type);
+            }
         }
 
         public void SetHeaderText(string text)
