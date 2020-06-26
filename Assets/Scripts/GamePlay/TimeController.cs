@@ -99,18 +99,13 @@ namespace Game.Assets.Scripts.GamePlay
         {
             _buildingRemainingTime -= Time.deltaTime;
             int second = ((int)_buildingRemainingTime);
-            if (_previousSecond != second)
+            timePlaceholder.text = second.ToString();
+            if (_buildingRemainingTime <= 0f)
             {
-                Debug.Log("Play Second Music");
                 if (_secondSound != null)
                 {
                     _secondSound.Play();
                 }
-            }
-            _previousSecond = second;
-            timePlaceholder.text = second.ToString();
-            if (_buildingRemainingTime <= 0f)
-            {
                 timePlaceholder.text = "0";
                 OnWaveStarted();
             }

@@ -8,7 +8,7 @@ namespace Game.Assets.Scripts.GamePlay
     using UnityEngine;
 
     public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener,
-     MapControllerListener, RetryListener, StartBattleListener, EnemyListener, HealthListener
+     MapControllerListener, RetryListener, StartBattleListener, EnemyListener, HealthListener, ShopButtonListener
     {
 
         [SerializeField]
@@ -45,6 +45,12 @@ namespace Game.Assets.Scripts.GamePlay
         private LoseWindow _loseWindow;
 
         [SerializeField]
+        private ShopWindow _shopWindow;
+
+        [SerializeField]
+        private ShopButton _shopButton;
+
+        [SerializeField]
         private GamePlayData _gamePlay;
 
         private WavesController _wavesController;
@@ -62,6 +68,7 @@ namespace Game.Assets.Scripts.GamePlay
             InitializeWinWindow();
             InitializeStartWindow();
             InitializeLoseWindow();
+            InitializeShopWindow();
             ShowStartWindow();
         }
 
@@ -104,6 +111,12 @@ namespace Game.Assets.Scripts.GamePlay
         private void InitializeMapController()
         {
             _mapController.Listener = this;
+        }
+
+        private void InitializeShopWindow()
+        {
+            _shopButton.Listener = this;
+            _shopWindow.Initialize(_gamePlay.TowerData.Towers);
         }
 
         private void ShowStartWindow()
@@ -207,6 +220,12 @@ namespace Game.Assets.Scripts.GamePlay
         public void DoDamage(int damage)
         {
             _healthController.OnDamageReceived(damage);
+        }
+
+        public void ShowShopWindow()
+        {
+            _shopWindow.RefreshList(_moneyController.Money);
+            _shopWindow.gameObject.SetActive(true);
         }
     }
 }

@@ -7,8 +7,9 @@ namespace Game.Assets.Scripts.UI
         [SerializeField]
         private AudioSource _clickButtonSound;
 
-        [SerializeField]
-        private GameObject shopWindow;
+        private ShopButtonListener _listener;
+
+        public ShopButtonListener Listener { set => _listener = value; }
 
         public void OnButtonClicked()
         {
@@ -17,9 +18,9 @@ namespace Game.Assets.Scripts.UI
                 _clickButtonSound.Play();
             }
 
-            if (shopWindow != null)
+            if (_listener != null)
             {
-                shopWindow.SetActive(true);
+                _listener.ShowShopWindow();
             }
 
         }
