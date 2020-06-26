@@ -44,6 +44,8 @@ public class HittableObject : MonoBehaviour
         {
             int soundIndex = Random.Range(0, sounds.Length);
             Sound sound = sounds[soundIndex];
+            movementAudioSource.pitch = sound.pitch;
+            movementAudioSource.spatialBlend = sound.spatialBlend;
             movementAudioSource.PlayOneShot(sound.sound, sound.volume);
             yield return new WaitWhile(() => movementAudioSource.isPlaying);
             StartCoroutine(PlayRandomSoundRepeately(sounds));
@@ -55,7 +57,9 @@ public class HittableObject : MonoBehaviour
         AudioSource source = audioSourcePool.GetAudioSource();
         if (source != null)
         {
-            source.PlayOneShot(sound.sound, 1f);
+            source.pitch = sound.pitch;
+            source.spatialBlend = sound.spatialBlend;
+            source.PlayOneShot(sound.sound, sound.volume);
             yield return new WaitWhile(() => source.isPlaying);
             audioSourcePool.Release(source);
         }
