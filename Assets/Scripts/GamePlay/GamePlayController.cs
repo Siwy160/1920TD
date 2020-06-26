@@ -1,6 +1,7 @@
 namespace Game.Assets.Scripts.GamePlay
 {
     using System;
+    using Game.Assets.Scripts.Menu;
     using Game.Assets.Scripts.UI;
     using global::GamePlay;
     using global::GamePlay.Data;
@@ -8,6 +9,9 @@ namespace Game.Assets.Scripts.GamePlay
 
     public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener, MapControllerListener, RetryListener, StartBattleListener
     {
+        [SerializeField]
+        private MoneyController _moneyController;
+
         [SerializeField]
         private TimeController _timeController;
 
@@ -34,11 +38,17 @@ namespace Game.Assets.Scripts.GamePlay
         private void Start()
         {
             _wavesController = new WavesController(_gamePlay.WavesData.Waves);
+            InitializeMoneyController();
             InitializeTimer();
             InitializeWaveSpawner();
             InitializeMapController();
             InitializeWinWindow();
             InitializeStartWindow();
+        }
+
+        private void InitializeMoneyController()
+        {
+            _moneyController.AddMoney(_gamePlay.Player.Money.MoneyAtStart);
         }
 
         private void InitializeStartWindow()
@@ -69,7 +79,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         public void AddMoney()
         {
-
+            _moneyController.AddMoney(_gamePlay.Player.Money.MoneyPerSecond);
         }
 
         public void StartWave()
@@ -101,6 +111,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         private void ShowWinWindow()
         {
+            _timeController.Pause();
             _winWindow.gameObject.SetActive(true);
         }
 
@@ -112,6 +123,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         public void Retry()
         {
+            _moneyController.Restart(_gamePlay.Player.Money.MoneyAtStart);
             _userInterface.Restart();
             _timeController.Restart();
             _wavesController.Restart();
