@@ -6,6 +6,12 @@ namespace Game.Assets.Scripts.Menu
     public class BattleWindow : MonoBehaviour
     {
         [SerializeField]
+        private AudioSource _exitButtonClickedSound;
+
+        [SerializeField]
+        private AudioSource _battleStartButtonClickedSound;
+
+        [SerializeField]
         private TMP_Text _header;
 
         [SerializeField]
@@ -14,15 +20,6 @@ namespace Game.Assets.Scripts.Menu
         [SerializeField]
         private TMP_Text _buttonTextPlaceholder;
 
-        [SerializeField]
-        private string _battleName;
-
-        [SerializeField]
-        private string _battleDescription;
-
-        [SerializeField]
-        private string _buttonText;
-
         private BattleType _type;
         private BattleStartListener _battleStartListener;
         public BattleStartListener BattleStartListener { get => _battleStartListener; set => _battleStartListener = value; }
@@ -30,6 +27,7 @@ namespace Game.Assets.Scripts.Menu
 
         public void OnCancelButtonClicked()
         {
+            _exitButtonClickedSound.Play();
             gameObject.SetActive(false);
         }
 
@@ -37,6 +35,7 @@ namespace Game.Assets.Scripts.Menu
         {
             if (_battleStartListener != null)
             {
+                _battleStartButtonClickedSound.Play();
                 _battleStartListener.OnBattleStarted(_type);
             }
         }
