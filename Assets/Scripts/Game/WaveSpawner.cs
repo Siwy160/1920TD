@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
-
-    [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Transform spawnPoint;
 
     private WaveSpawnerListener _listener;
@@ -20,7 +18,7 @@ public class WaveSpawner : MonoBehaviour
         var enemies = waveData.Enemies;
         foreach (GameObject enemy in enemies)
         {
-            SpawnEnemy();
+            SpawnEnemy(enemy);
             yield return new WaitForSeconds(enemySpawnInterval);
         }
         
@@ -30,9 +28,9 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy()
+    private void SpawnEnemy(GameObject enemy)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
     }
 
     public void StartWave(GamePlay.Data.WaveData waveData)
