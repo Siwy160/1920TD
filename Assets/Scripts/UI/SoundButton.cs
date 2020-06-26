@@ -21,22 +21,22 @@ namespace Game.Assets.Scripts.UI
         private void Start()
         {
             soundButton = gameObject.GetComponent<Button>();
-            SwitchButtonMuteOption();
+            SwitchButtonMuteOption(false);
         }
         public void OnSoundButtonClicked()
         {
-            SwitchButtonMuteOption();
+            SwitchButtonMuteOption(true);
         }
 
-        private void SwitchButtonMuteOption()
+        private void SwitchButtonMuteOption(bool playSound)
         {
             if (soundButton != null)
             {
-                if (_onClickSound)
+                if (_onClickSound && playSound)
                 {
                     _onClickSound.Play();
                 }
-                
+
                 if (isMuted)
                 {
                     AudioListener.volume = 0f;
