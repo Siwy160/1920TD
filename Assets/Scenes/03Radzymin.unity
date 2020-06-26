@@ -849,6 +849,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -922,6 +923,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1576,7 +1578,7 @@ PrefabInstance:
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.707
+      value: -16.78
       objectReference: {fileID: 0}
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
@@ -1586,7 +1588,7 @@ PrefabInstance:
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.51
+      value: 6.437
       objectReference: {fileID: 0}
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
@@ -3209,7 +3211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd982628ed8f7704180bf4180e9eea82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d,
+  enemyPrefab: {fileID: 2352500666499460421, guid: 02b830669b83b3d4c8c4bf246e3d1c6c,
     type: 3}
   spawnPoint: {fileID: 6294456134318115316}
   enemyData: {fileID: 11400000, guid: e3d7665f449971c43a44115ba4c3b89e, type: 2}
@@ -3914,6 +3916,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4163,7 +4166,7 @@ PrefabInstance:
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.707
+      value: -13.652
       objectReference: {fileID: 0}
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
@@ -4173,7 +4176,7 @@ PrefabInstance:
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.51
+      value: 6.519
       objectReference: {fileID: 0}
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
@@ -6353,6 +6356,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7035,6 +7039,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7174,6 +7179,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7247,6 +7253,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7797,6 +7804,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7889,6 +7897,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8616,6 +8625,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10088,6 +10098,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10311,7 +10322,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -11132,6 +11143,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11182,7 +11194,7 @@ PrefabInstance:
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.707
+      value: -16.64
       objectReference: {fileID: 0}
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
@@ -11192,7 +11204,7 @@ PrefabInstance:
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.51
+      value: 8.627
       objectReference: {fileID: 0}
     - target: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
         type: 3}
@@ -11568,6 +11580,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11860,6 +11873,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12520,6 +12534,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13426,6 +13441,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13727,6 +13743,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13893,6 +13910,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
