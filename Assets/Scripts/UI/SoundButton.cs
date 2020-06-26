@@ -32,7 +32,11 @@ namespace Game.Assets.Scripts.UI
         {
             if (soundButton != null)
             {
-                _onClickSound.Play();
+                if (_onClickSound)
+                {
+                    _onClickSound.Play();
+                }
+                
                 if (isMuted)
                 {
                     AudioListener.volume = 0f;

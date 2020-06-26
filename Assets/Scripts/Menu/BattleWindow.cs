@@ -27,7 +27,10 @@ namespace Game.Assets.Scripts.Menu
 
         public void OnCancelButtonClicked()
         {
-            _exitButtonClickedSound.Play();
+            if (_exitButtonClickedSound)
+            {
+                _exitButtonClickedSound.Play();
+            }
             gameObject.SetActive(false);
         }
 
@@ -35,7 +38,10 @@ namespace Game.Assets.Scripts.Menu
         {
             if (_battleStartListener != null)
             {
-                _battleStartButtonClickedSound.Play();
+                if (_battleStartButtonClickedSound != null)
+                {
+                    _battleStartButtonClickedSound.Play();
+                }
                 _battleStartListener.OnBattleStarted(_type);
             }
         }
