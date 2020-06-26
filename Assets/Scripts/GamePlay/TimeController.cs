@@ -7,6 +7,8 @@ namespace Game.Assets.Scripts.GamePlay
 {
     public class TimeController : MonoBehaviour, GamePlay
     {
+        [SerializeField]
+        private AudioSource _secondSound;
 
         [SerializeField]
         private GameObject _timerObject;
@@ -18,7 +20,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         private float _buildingRemainingTime;
 
-        private int previousSecond = 0;
+        private int _previousSecond = 0;
 
         private TimerType type = TimerType.BUILDING;
 
@@ -83,20 +85,29 @@ namespace Game.Assets.Scripts.GamePlay
         {
             _waveTime += Time.deltaTime;
             int second = ((int)_waveTime);
-            if (previousSecond != second)
+            if (_previousSecond != second)
             {
                 if (_listener != null)
                 {
                     _listener.AddMoney();
                 }
             }
-            this.previousSecond = second;
+            this._previousSecond = second;
         }
 
         private void CountDownBuildingTime()
         {
             _buildingRemainingTime -= Time.deltaTime;
             int second = ((int)_buildingRemainingTime);
+            if (_previousSecond != second)
+            {
+                Debug.Log("Play Second Music");
+                if (_secondSound != null)
+                {
+                    _secondSound.Play();
+                }
+            }
+            _previousSecond = second;
             timePlaceholder.text = second.ToString();
             if (_buildingRemainingTime <= 0f)
             {
@@ -120,6 +131,7 @@ namespace Game.Assets.Scripts.GamePlay
                 HideTimer();
 
             }
+            _previousSecond = 0;
             type = TimerType.WAVE;
         }
 
@@ -130,6 +142,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         public void CountBuildingTime()
         {
+            _previousSecond = 0;
             _buildingRemainingTime = _buildingTime + 1;
             ShowTimer();
             type = TimerType.BUILDING;

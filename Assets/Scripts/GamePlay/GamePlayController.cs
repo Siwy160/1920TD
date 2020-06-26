@@ -10,6 +10,13 @@ namespace Game.Assets.Scripts.GamePlay
     public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener,
      MapControllerListener, RetryListener, StartBattleListener, EnemyListener, HealthListener
     {
+
+        [SerializeField]
+        private AudioSource _waveStartSound;
+
+        [SerializeField]
+        private AudioSource _waveEndSound;
+
         [SerializeField]
         private HealthController _healthController;
 
@@ -115,6 +122,11 @@ namespace Game.Assets.Scripts.GamePlay
             WaveData waveData = _wavesController.GetWave();
             if (waveData != null)
             {
+                if (_waveStartSound != null)
+                {
+                    _waveStartSound.Play();
+                }
+
                 _waveSpawner.StartWave(waveData, this);
             }
         }
@@ -128,6 +140,11 @@ namespace Game.Assets.Scripts.GamePlay
         {
             if (_gameState == GameState.IDLE)
             {
+                if (_waveEndSound != null)
+                {
+                    _waveStartSound.Play();
+                }
+
                 if (_wavesController.AnyWaveLeft())
                 {
                     StartBuildingMode();
