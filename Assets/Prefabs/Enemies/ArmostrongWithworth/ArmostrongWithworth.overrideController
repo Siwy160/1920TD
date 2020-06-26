@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ArmostrongWithworth
+  m_Controller: {fileID: 9100000, guid: d86c1ae876e3d0a468ee2fe8c1860065, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 6394785727354027343, guid: f4ce50d0037b711488915b58a092d917,
+      type: 3}
+    m_OverrideClip: {fileID: 214708909214665027, guid: d588a69a3cb928c43b048e82217027cb,
+      type: 3}
+  - m_OriginalClip: {fileID: -5480419611278045171, guid: f4ce50d0037b711488915b58a092d917,
+      type: 3}
+    m_OverrideClip: {fileID: 7933671557308413421, guid: d588a69a3cb928c43b048e82217027cb,
+      type: 3}
