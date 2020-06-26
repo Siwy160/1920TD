@@ -6,9 +6,12 @@ namespace Game.Assets.Scripts.UI
     public class ExitButton : MonoBehaviour
     {
 
+        [SerializeField]
+        private GameObject exitWindow;
+
         public void OnExitButtonClicked()
         {
-            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+            exitWindow.SetActive(true);
         }
 
     }
