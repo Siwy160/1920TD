@@ -194,12 +194,12 @@ PrefabInstance:
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: hitReceivedSounds.Array.size
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.size
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
@@ -250,26 +250,26 @@ PrefabInstance:
         type: 3}
       propertyPath: movementSounds.Array.data[0].sound
       value: 
-      objectReference: {fileID: 8300000, guid: efd61c6fe8ca94858bec4cf1b31b0605, type: 3}
+      objectReference: {fileID: 8300000, guid: 469fe1f61bb0a4f4d8e79e6e804ee74a, type: 3}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[1].sound
       value: 
-      objectReference: {fileID: 8300000, guid: da2cf5c1d2d424781a0e8958b10f60fc, type: 3}
+      objectReference: {fileID: 8300000, guid: a2c302e4c95e949f58ffa60bd3e42839, type: 3}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[1].volume
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[0].volume
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[0].pitch
-      value: 1.06
+      value: 0.94
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
@@ -309,7 +309,7 @@ PrefabInstance:
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[1].pitch
-      value: 1
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
@@ -320,16 +320,16 @@ PrefabInstance:
         type: 3}
       propertyPath: movementSounds.Array.data[2].sound
       value: 
-      objectReference: {fileID: 8300000, guid: 891086f42705e4d5191822895a1cda65, type: 3}
+      objectReference: {fileID: 8300000, guid: f40696f5bf522484e817fd8be53c6d0d, type: 3}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[2].volume
-      value: 0.7
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[2].pitch
-      value: 1
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
@@ -340,16 +340,16 @@ PrefabInstance:
         type: 3}
       propertyPath: movementSounds.Array.data[3].sound
       value: 
-      objectReference: {fileID: 8300000, guid: baedb9eba402e4bae8d71e2edc7808b8, type: 3}
+      objectReference: {fileID: 8300000, guid: 1923f765209cf400e95709315f57fc19, type: 3}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[3].volume
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[3].pitch
-      value: 1
+      value: 0.89
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
