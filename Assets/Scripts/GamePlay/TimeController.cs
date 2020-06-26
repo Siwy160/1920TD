@@ -24,7 +24,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         private float _waveTime = 0f;
 
-        private bool _pause = false;
+        private bool _pause = true;
 
         private TimeControllerListener _listener;
 
@@ -103,6 +103,11 @@ namespace Game.Assets.Scripts.GamePlay
                 timePlaceholder.text = "0";
                 OnWaveStarted();
             }
+        }
+
+        internal void Restart()
+        {
+            CountBuildingTime();
         }
 
         private void OnWaveStarted()

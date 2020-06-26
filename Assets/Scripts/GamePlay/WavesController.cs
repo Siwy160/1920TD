@@ -1,3 +1,4 @@
+using System;
 using GamePlay.Data;
 using UnityEngine;
 
@@ -25,5 +26,9 @@ namespace GamePlay
             return _waves.Length > currentWave + 1;
         }
 
+        internal void Restart()
+        {
+            currentWave = -1;
+        }
     }
 }
