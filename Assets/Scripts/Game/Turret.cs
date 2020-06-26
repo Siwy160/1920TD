@@ -20,7 +20,7 @@ public class Turret : MonoBehaviour
     private Transform target;
     private float fireCountdown = 0f;
 
-    public string enemyTag = "EnemyTag";
+    public string enemyTag = "Enemy";
 
     void Start()
     {

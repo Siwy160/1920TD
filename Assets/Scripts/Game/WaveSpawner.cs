@@ -1,49 +1,33 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using Game.Assets.Scripts.GamePlay;
+using GamePlay;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
 
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private float waveInternalSec = 10f;
     [SerializeField] private Transform spawnPoint;
-    private float countdown = 2;
-    private int waveNumber = 1;
-    private float enemySpawnInterval = 0.5f;
 
+    private WaveSpawnerListener _listener;
+    private float enemySpawnInterval = 0.5f;
     public EnemyData enemyData;
 
-    public Text waveCountdownText;
+    public WaveSpawnerListener Listener { set => _listener = value; }
 
-    // Start is called before the first frame update
-    void Start()
+    private IEnumerator SpawnWave(GamePlay.Data.WaveData waveData)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        countdown -= Time.deltaTime;
-        waveCountdownText.text = ((int)countdown + 1).ToString();
-        if (countdown <= 0f)
-        {
-            countdown = waveInternalSec;
-            StartCoroutine(SpawnWave());
-        }
-    }
-
-    private IEnumerator SpawnWave()
-    {
-        for (int i = 0; i < GetMonstersInCurrentWave(); i++)
+        var enemies = waveData.Enemies;
+        foreach (GameObject enemy in enemies)
         {
             SpawnEnemy();
             yield return new WaitForSeconds(enemySpawnInterval);
         }
-        waveNumber++;
+        
+        if (_listener != null)
+        {
+            _listener.OnAllEnemieSpawned();
+        }
     }
 
     private void SpawnEnemy()
@@ -51,8 +35,8 @@ public class WaveSpawner : MonoBehaviour
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 
-    private int GetMonstersInCurrentWave()
+    public void StartWave(GamePlay.Data.WaveData waveData)
     {
-        return waveNumber;
+        StartCoroutine(SpawnWave(waveData));
     }
 }

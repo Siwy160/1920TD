@@ -126,6 +126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Footman
       objectReference: {fileID: 0}
+    - target: {fileID: 831004557806033872, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 831004557806033873, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: m_LocalPosition.x
