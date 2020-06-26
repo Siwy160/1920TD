@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : HittableObject
 {
-    [Header("Audio")]
-    [SerializeField] private AudioSource movementSound;
-    [SerializeField] private AudioSource deathSound;
+    [SerializeField] private Sound[] movementSounds;
+    [SerializeField] private Sound[] deathSounds;
 
     [Header("Animation")]
     [SerializeField] private float movementAnimationMultiplier = 1;
@@ -20,12 +20,16 @@ public class Enemy : HittableObject
     private float rotationSpeed = 10f;
     [SerializeField] private Animator animator;
     private bool alive = true;
+    private IEnumerator movementCoroutine;
 
     void Start()
     {
+        base.Start();
         animator = GetComponentInChildren<Animator>();
         animator.SetFloat("RunAnimationMultiplier", movementAnimationMultiplier);
         animator.SetFloat("DeathAnimationMultiplier", deathAnimationMultiplier);
+        movementCoroutine = PlayRandomSoundRepeately(movementSounds);
+        StartCoroutine(movementCoroutine);
         SetNewTarget();
     }
 
@@ -73,7 +77,9 @@ public class Enemy : HittableObject
             Debug.Log("Enemy died");
             alive = false;
             animator.SetTrigger("Death");
-            deathSound.Play();
+            PlayRandomSound(deathSounds);
+            StopCoroutine(movementCoroutine);
+            movementAudioSource.Stop();
             Destroy(gameObject, 2f);
         }
     }
