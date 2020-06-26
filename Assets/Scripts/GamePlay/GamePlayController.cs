@@ -6,7 +6,7 @@ namespace Game.Assets.Scripts.GamePlay
     using global::GamePlay.Data;
     using UnityEngine;
 
-    public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener, MapControllerListener, RetryListener
+    public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener, MapControllerListener, RetryListener, StartBattleListener
     {
         [SerializeField]
         private TimeController _timeController;
@@ -24,6 +24,9 @@ namespace Game.Assets.Scripts.GamePlay
         private WinWindow _winWindow;
 
         [SerializeField]
+        private StartWindow _startWindow;
+
+        [SerializeField]
         private GamePlayData _gamePlay;
 
         private WavesController _wavesController;
@@ -35,6 +38,12 @@ namespace Game.Assets.Scripts.GamePlay
             InitializeWaveSpawner();
             InitializeMapController();
             InitializeWinWindow();
+            InitializeStartWindow();
+        }
+
+        private void InitializeStartWindow()
+        {
+            _startWindow.Listener = this;
         }
 
         private void InitializeWinWindow()
@@ -103,7 +112,14 @@ namespace Game.Assets.Scripts.GamePlay
 
         public void Retry()
         {
+            _userInterface.Restart();
+            _timeController.Restart();
+            _wavesController.Restart();
+        }
 
+        public void StartBattle()
+        {
+            _timeController.Resume();
         }
     }
 }

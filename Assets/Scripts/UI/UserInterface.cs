@@ -1,5 +1,6 @@
 namespace Game.Assets.Scripts.UI
 {
+    using System;
     using UnityEngine;
 
     public class UserInterface : MonoBehaviour
@@ -25,6 +26,11 @@ namespace Game.Assets.Scripts.UI
         public void ShowShop()
         {
             _shopIcon.transform.position = _shopIconPosition;
+        }
+
+        internal void Restart()
+        {
+            
         }
     }
 }
