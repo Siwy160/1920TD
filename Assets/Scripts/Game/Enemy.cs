@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using GamePlay;
 using UnityEngine;
 
 public class Enemy : HittableObject
@@ -14,6 +15,7 @@ public class Enemy : HittableObject
     [Header("Stats")]
     [SerializeField] private float speed = 3f;
     [SerializeField] private float health = 10;
+    [SerializeField] private int _money = 100;
 
     private Transform target;
     private int waypointIndex;
@@ -21,6 +23,10 @@ public class Enemy : HittableObject
     [SerializeField] private Animator animator;
     private bool alive = true;
     private IEnumerator movementCoroutine;
+
+    private EnemyDeathListener _listener;
+
+    public EnemyDeathListener Listener { set => _listener = value; }
 
     void Start()
     {
@@ -75,6 +81,7 @@ public class Enemy : HittableObject
         if (alive && health <= 0)
         {
             Debug.Log("Enemy died");
+            _listener.OnEnemyDead(_money);
             alive = false;
             animator.SetTrigger("Death");
             PlayRandomSound(deathSounds);

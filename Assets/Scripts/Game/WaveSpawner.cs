@@ -13,28 +13,33 @@ public class WaveSpawner : MonoBehaviour
 
     public WaveSpawnerListener Listener { set => _listener = value; }
 
-    private IEnumerator SpawnWave(GamePlay.Data.WaveData waveData)
+    private IEnumerator SpawnWave(GamePlay.Data.WaveData waveData, EnemyDeathListener listener)
     {
         var enemies = waveData.Enemies;
         foreach (GameObject enemy in enemies)
         {
-            SpawnEnemy(enemy);
+            SpawnEnemy(enemy, listener);
             yield return new WaitForSeconds(enemySpawnInterval);
         }
-        
+
         if (_listener != null)
         {
             _listener.OnAllEnemieSpawned();
         }
     }
 
-    private void SpawnEnemy(GameObject enemy)
+    private void SpawnEnemy(GameObject enemy, EnemyDeathListener listener)
     {
-        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemyObject = Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+        Enemy enemyComponent = enemyObject.GetComponent<Enemy>();
+        if (enemyComponent != null)
+        {
+            enemyComponent.Listener = listener;
+        }
     }
 
-    public void StartWave(GamePlay.Data.WaveData waveData)
+    public void StartWave(GamePlay.Data.WaveData waveData, EnemyDeathListener listener)
     {
-        StartCoroutine(SpawnWave(waveData));
+        StartCoroutine(SpawnWave(waveData, listener));
     }
 }

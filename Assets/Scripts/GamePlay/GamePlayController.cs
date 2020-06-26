@@ -1,13 +1,12 @@
 namespace Game.Assets.Scripts.GamePlay
 {
-    using System;
     using Game.Assets.Scripts.Menu;
     using Game.Assets.Scripts.UI;
     using global::GamePlay;
     using global::GamePlay.Data;
     using UnityEngine;
 
-    public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener, MapControllerListener, RetryListener, StartBattleListener
+    public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener, MapControllerListener, RetryListener, StartBattleListener, EnemyDeathListener
     {
         [SerializeField]
         private MoneyController _moneyController;
@@ -88,7 +87,7 @@ namespace Game.Assets.Scripts.GamePlay
             WaveData waveData = _wavesController.GetWave();
             if (waveData != null)
             {
-                _waveSpawner.StartWave(waveData);
+                _waveSpawner.StartWave(waveData, this);
             }
         }
 
@@ -132,6 +131,11 @@ namespace Game.Assets.Scripts.GamePlay
         public void StartBattle()
         {
             _timeController.Resume();
+        }
+
+        public void OnEnemyDead(int money)
+        {
+            _moneyController.AddMoney(money);
         }
     }
 }
