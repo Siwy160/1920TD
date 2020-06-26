@@ -9,8 +9,16 @@ namespace Game.Assets.Scripts.UI
         [SerializeField]
         private GameObject exitWindow;
 
+        [SerializeField]
+        private AudioSource _exitButtonClickedSound;
+
         public void OnExitButtonClicked()
         {
+            if (_exitButtonClickedSound)
+            {
+                _exitButtonClickedSound.Play();
+            }
+
             exitWindow.SetActive(true);
         }
 
