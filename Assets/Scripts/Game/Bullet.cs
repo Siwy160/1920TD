@@ -37,7 +37,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
         if (target.tag == EnemyTag)
         {
-            Destroy(target);
+            target.GetComponent<Enemy>().OnHit(Damage);
         }
     }
 }

@@ -154,11 +154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6aab4b17f283cd4da35ac21d7b9a49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 8
+  range: 3
   rotationSpeed: 10
   fireRate: 1
   damage: 1
-  bulletSpeed: 40
+  bulletSpeed: 20
   partToRotate: {fileID: 5221486143341467672}
   barrel: {fileID: 743536685460122068}
   bulletPrefab: {fileID: 1576626353460132559, guid: 9f654a5c11ed611429a643c71bc605f3,

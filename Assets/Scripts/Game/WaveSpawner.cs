@@ -48,9 +48,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        enemyPrefab.GetComponent<Enemy>().enemyData = enemyData;
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-
     }
 
     private int GetMonstersInCurrentWave()
