@@ -8,8 +8,12 @@ namespace GamePlay.Data
     {
 
         [SerializeField]
-        MoneyData _money;
+        private MoneyData _money;
 
-        public MoneyData Money { get => _money; set => _money = value; }
+        [SerializeField]
+        private int _startHealth = 20;
+
+        public MoneyData Money { get => _money; }
+        public int StartHealth { get => _startHealth; }
     }
 }

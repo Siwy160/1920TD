@@ -1,7 +1,8 @@
 namespace GamePlay
 {
-    public interface EnemyDeathListener
+    public interface EnemyListener
     {
         void OnEnemyDead(int money);
+        void DoDamage(int damage);
     }
 }

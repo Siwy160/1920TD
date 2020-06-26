@@ -13,7 +13,7 @@ public class WaveSpawner : MonoBehaviour
 
     public WaveSpawnerListener Listener { set => _listener = value; }
 
-    private IEnumerator SpawnWave(GamePlay.Data.WaveData waveData, EnemyDeathListener listener)
+    private IEnumerator SpawnWave(GamePlay.Data.WaveData waveData, EnemyListener listener)
     {
         var enemies = waveData.Enemies;
         foreach (GameObject enemy in enemies)
@@ -28,7 +28,7 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy(GameObject enemy, EnemyDeathListener listener)
+    private void SpawnEnemy(GameObject enemy, EnemyListener listener)
     {
         GameObject enemyObject = Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
         Enemy enemyComponent = enemyObject.GetComponent<Enemy>();
@@ -38,7 +38,7 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    public void StartWave(GamePlay.Data.WaveData waveData, EnemyDeathListener listener)
+    public void StartWave(GamePlay.Data.WaveData waveData, EnemyListener listener)
     {
         StartCoroutine(SpawnWave(waveData, listener));
     }

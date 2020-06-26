@@ -15,7 +15,8 @@ public class Enemy : HittableObject
     [Header("Stats")]
     [SerializeField] private float speed = 3f;
     [SerializeField] private float health = 10;
-    [SerializeField] private int _money = 100;
+    [SerializeField] private int money = 100;
+    [SerializeField] private int damage = 2;
 
     private Transform target;
     private int waypointIndex;
@@ -24,9 +25,9 @@ public class Enemy : HittableObject
     private bool alive = true;
     private IEnumerator movementCoroutine;
 
-    private EnemyDeathListener _listener;
+    private EnemyListener _listener;
 
-    public EnemyDeathListener Listener { set => _listener = value; }
+    public EnemyListener Listener { set => _listener = value; }
 
     void Start()
     {
@@ -66,6 +67,7 @@ public class Enemy : HittableObject
     {
         if (waypointIndex >= Waypoints.waypoints.Length)
         {
+            _listener.DoDamage(damage);
             Destroy(gameObject);
             return;
         }
@@ -81,7 +83,7 @@ public class Enemy : HittableObject
         if (alive && health <= 0)
         {
             Debug.Log("Enemy died");
-            _listener.OnEnemyDead(_money);
+            _listener.OnEnemyDead(money);
             alive = false;
             animator.SetTrigger("Death");
             PlayRandomSound(deathSounds);
