@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6000713415624762319}
   m_Layer: 0
   m_Name: Base
-  m_TagString: EnemyTag
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,8 +61,8 @@ MonoBehaviour:
     volume: 0
     pitch: 1
     spatialBlend: 1
-  movementAnimationMultiplier: 0
-  deathAnimationMultiplier: 0
+  movementAnimationMultiplier: 1
+  deathAnimationMultiplier: 1
   speed: 3
   health: 10
   animator: {fileID: 0}
