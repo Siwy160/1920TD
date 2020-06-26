@@ -65,6 +65,8 @@ MonoBehaviour:
   deathAnimationMultiplier: 1
   speed: 3
   health: 10
+  money: 100
+  damage: 2
   animator: {fileID: 0}
 --- !u!135 &4512687150060832634
 SphereCollider:

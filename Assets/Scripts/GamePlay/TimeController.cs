@@ -108,6 +108,7 @@ namespace Game.Assets.Scripts.GamePlay
         internal void Restart()
         {
             CountBuildingTime();
+            Resume();
         }
 
         private void OnWaveStarted()

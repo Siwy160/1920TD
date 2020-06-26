@@ -8,6 +8,9 @@ namespace GamePlay
     public class GamePlayData
     {
         [SerializeField]
+        private PlayerData _player;
+
+        [SerializeField]
         private TimerData _timerData;
 
         [SerializeField]
@@ -16,5 +19,6 @@ namespace GamePlay
         public TimerData TimerData { get => _timerData; }
 
         public WavesData WavesData { get => wavesData; }
+        public PlayerData Player { get => _player; }
     }
 }

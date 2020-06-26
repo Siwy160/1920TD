@@ -1,12 +1,15 @@
 namespace Game.Assets.Scripts.UI
 {
-    using System;
     using UnityEngine;
+    using UnityEngine.UI;
 
     public class UserInterface : MonoBehaviour
     {
         [SerializeField]
         private GameObject _shopIcon;
+
+        [SerializeField]
+        private Button[] buttons;
 
         [SerializeField]
         private GameObject _shopWindow;
@@ -30,7 +33,19 @@ namespace Game.Assets.Scripts.UI
 
         internal void Restart()
         {
-            
+            ShowShop();
+            foreach (Button button in buttons)
+            {
+                button.interactable = true;
+            }
+        }
+
+        internal void Disable()
+        {
+            foreach (Button button in buttons)
+            {
+                button.interactable = false;
+            }
         }
     }
 }
