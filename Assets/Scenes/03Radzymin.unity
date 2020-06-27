@@ -284,7 +284,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -335,6 +335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -563,7 +568,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -614,6 +619,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -1035,7 +1045,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1109,7 +1118,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1183,7 +1191,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1631,7 +1638,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -1683,6 +1690,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &140392149
@@ -1700,7 +1712,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -1751,6 +1763,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -1991,7 +2008,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -2043,6 +2060,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &181251733
@@ -2060,7 +2082,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -2112,6 +2134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &188654650 stripped
@@ -2159,7 +2186,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -2210,6 +2237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -2465,7 +2497,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2655,7 +2686,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -2707,6 +2738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &317867347 stripped
@@ -2742,7 +2778,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -2793,6 +2829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -3153,7 +3194,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -3204,6 +3245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -3297,7 +3343,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -3348,6 +3394,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -4651,7 +4702,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -4708,6 +4759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &505378324 stripped
@@ -4743,7 +4799,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -4795,6 +4851,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &533349735
@@ -4812,7 +4873,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -4863,6 +4924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -4979,7 +5045,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5016,7 +5081,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -5068,6 +5133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &550417978
@@ -5085,7 +5155,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -5136,6 +5206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -5436,7 +5511,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -5488,6 +5563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &575071076 stripped
@@ -5517,7 +5597,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -5568,6 +5648,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -5854,7 +5939,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -5906,6 +5991,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &624822511 stripped
@@ -5929,7 +6019,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -5981,6 +6071,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &626364466 stripped
@@ -6010,7 +6105,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -6062,6 +6157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &644992294 stripped
@@ -6085,7 +6185,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -6136,6 +6236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6238,7 +6343,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -6289,6 +6394,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6376,7 +6486,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -6427,6 +6537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6520,7 +6635,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -6571,6 +6686,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6812,7 +6932,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -6863,6 +6983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6956,7 +7081,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -7007,6 +7132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -7369,7 +7499,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -7421,6 +7551,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &806975256 stripped
@@ -7444,7 +7579,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -7495,6 +7630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -7672,7 +7812,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -7723,6 +7863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -7810,7 +7955,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -7861,6 +8006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -7978,7 +8128,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8034,7 +8183,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -8085,6 +8234,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -8270,7 +8424,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8313,7 +8466,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -8364,6 +8517,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -8481,7 +8639,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -8532,6 +8690,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -8968,7 +9131,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9108,7 +9270,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9182,7 +9343,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9573,7 +9733,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -9624,6 +9784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -9812,7 +9977,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9947,7 +10111,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10034,7 +10197,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10380,7 +10542,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -10431,6 +10593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -10581,7 +10748,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -10632,6 +10799,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -10812,6 +10984,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waveStartSound: {fileID: 0}
   _waveEndSound: {fileID: 0}
+  _spotSelector: {fileID: 1168246678}
+  _turretSpawner: {fileID: 1298146159}
   _healthController: {fileID: 695264627}
   _moneyController: {fileID: 948588430}
   _timeController: {fileID: 2059306165}
@@ -10823,6 +10997,7 @@ MonoBehaviour:
   _loseWindow: {fileID: 37541305}
   _shopWindow: {fileID: 1061224227}
   _shopButton: {fileID: 833561378}
+  _turretSpotsController: {fileID: 1298146160}
   _gamePlay:
     _player:
       _money:
@@ -10830,7 +11005,7 @@ MonoBehaviour:
         _moneyPerSecond: 5
       _startHealth: 20
     _timerData:
-      _buildingTime: 1555
+      _buildingTime: 5
     _towerData:
       _towers:
       - image: {fileID: 21300000, guid: bcfaa5bf91ade4f4b9a818d864fa68d3, type: 3}
@@ -10878,9 +11053,13 @@ MonoBehaviour:
       - enemies:
         - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
       - enemies:
-        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 6925934191906999259, guid: f310d652c2843e7489b1a0b92ac1ea04, type: 3}
       - enemies:
-        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 2352500666499460421, guid: 02b830669b83b3d4c8c4bf246e3d1c6c, type: 3}
+      - enemies:
+        - {fileID: 1869805719655407992, guid: 7949bbe3669e7b0438500c6974baacfe, type: 3}
+      - enemies:
+        - {fileID: 1711172914983624075, guid: fbda091daf012a341a31728f1647908c, type: 3}
 --- !u!4 &1168246677
 Transform:
   m_ObjectHideFlags: 0
@@ -10972,7 +11151,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11292,7 +11470,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -11343,6 +11521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -11934,6 +12117,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1298146158}
+  - component: {fileID: 1298146159}
+  - component: {fileID: 1298146160}
   m_Layer: 0
   m_Name: turretSpots
   m_TagString: Untagged
@@ -12012,6 +12197,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1298146159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298146157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf0790d9444b7c4b93b41955df80d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1298146160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298146157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651c6618b01b3a842b71fea408bacfe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1304293898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 653270301687917895, guid: 4995672505748964bac77eaf23a416ff,
@@ -12131,7 +12340,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -12183,6 +12392,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1351512202
@@ -12200,7 +12414,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -12252,6 +12466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1352963443
@@ -12269,7 +12488,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -12320,6 +12539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -12605,7 +12829,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12801,7 +13024,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -12852,6 +13075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -12920,7 +13148,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13373,7 +13600,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -13815,7 +14042,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -13866,6 +14093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -14266,7 +14498,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14828,7 +15059,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -14879,6 +15110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -14940,7 +15176,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15057,7 +15292,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -15108,6 +15343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -15164,7 +15404,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15457,7 +15696,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15926,7 +16164,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -15977,6 +16215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -16118,7 +16361,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16553,7 +16795,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -16604,6 +16846,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -16778,7 +17025,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -16830,6 +17077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1875817285
@@ -16847,7 +17099,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -16899,6 +17151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &1881826225 stripped
@@ -16928,7 +17185,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -16980,6 +17237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1883475113
@@ -16997,7 +17259,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -17054,6 +17316,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &1884206093 stripped
@@ -17077,7 +17344,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -17128,6 +17395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -17183,7 +17455,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17326,7 +17597,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17536,7 +17806,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -17587,6 +17857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -17642,7 +17917,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17779,7 +18053,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -17830,6 +18104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -17885,7 +18164,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17922,7 +18200,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -17978,6 +18256,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -18065,7 +18348,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -18116,6 +18399,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -18256,7 +18544,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.913
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -18307,6 +18595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}

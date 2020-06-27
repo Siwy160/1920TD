@@ -1,4 +1,5 @@
 using System;
+using GamePlay;
 using GamePlay.Data;
 using TMPro;
 using UnityEngine;
@@ -28,7 +29,11 @@ namespace Game.Assets.Scripts.UI
 
         private TowerData _data;
 
+        private ShopBuyListener _listener;
+
         public TowerData Data { get => _data; set => _data = value; }
+
+        public ShopBuyListener Listener { set => _listener = value; }
 
         public void SetName(string name)
         {
@@ -63,6 +68,14 @@ namespace Game.Assets.Scripts.UI
         internal void SetPrice(int price)
         {
             _price.text = price.ToString();
+        }
+
+        public void OnBuyButtonClicked()
+        {
+            if (_listener != null)
+            {
+                _listener.OnTowerBuyClicked(_data);
+            }
         }
     }
 }

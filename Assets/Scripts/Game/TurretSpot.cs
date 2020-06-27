@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using Game;
 using UnityEngine;
 
 public class TurretSpot : MonoBehaviour
@@ -9,6 +7,11 @@ public class TurretSpot : MonoBehaviour
     private Turret turret = null;
     private Material initialColor;
     private Renderer spotRenderer;
+    private SpotListener _listener;
+    private bool isSelected = false;
+
+    public SpotListener Listener { set => _listener = value; }
+    public bool IsSelected { get => isSelected; set => isSelected = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,11 @@ public class TurretSpot : MonoBehaviour
     internal void Clicked()
     {
         spotRenderer.material = selectedColor;
+        if (_listener != null)
+        {
+            _listener.OnSpotSelected(this);
+        }
+
     }
 
     internal void Deselect()
