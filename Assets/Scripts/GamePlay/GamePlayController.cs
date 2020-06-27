@@ -13,6 +13,12 @@ namespace Game.Assets.Scripts.GamePlay
     {
 
         [SerializeField]
+        private AudioSource _buildingModeBackgroundSound;
+
+        [SerializeField]
+        private AudioSource _waveModeBackgroundSound;
+
+        [SerializeField]
         private AudioSource _waveStartSound;
 
         [SerializeField]
@@ -156,6 +162,16 @@ namespace Game.Assets.Scripts.GamePlay
         public void StartWave()
         {
             _userInterface.HideShop();
+            if (_buildingModeBackgroundSound != null)
+            {
+                _buildingModeBackgroundSound.Stop();
+            }
+
+            if (_waveModeBackgroundSound != null)
+            {
+                _waveModeBackgroundSound.Play();
+            }
+
             WaveData waveData = _wavesController.GetWave();
             if (waveData != null)
             {
@@ -195,6 +211,16 @@ namespace Game.Assets.Scripts.GamePlay
 
         private void ShowWinWindow()
         {
+            if (_buildingModeBackgroundSound != null)
+            {
+                _buildingModeBackgroundSound.Stop();
+            }
+
+            if (_waveModeBackgroundSound != null)
+            {
+                _waveModeBackgroundSound.Stop();
+            }
+
             _gameState = GameState.WIN;
             StopGame();
             _winWindow.gameObject.SetActive(true);
@@ -207,6 +233,16 @@ namespace Game.Assets.Scripts.GamePlay
 
         private void StartBuildingMode()
         {
+            if (_waveModeBackgroundSound != null)
+            {
+                _waveModeBackgroundSound.Stop();
+            }
+
+            if (_buildingModeBackgroundSound != null)
+            {
+                _buildingModeBackgroundSound.Play();
+            }
+
             _userInterface.ShowShop();
             _timeController.CountBuildingTime();
         }
@@ -238,6 +274,16 @@ namespace Game.Assets.Scripts.GamePlay
 
         public void OnPlayerDead()
         {
+            if (_buildingModeBackgroundSound != null)
+            {
+                _buildingModeBackgroundSound.Stop();
+            }
+
+            if (_waveModeBackgroundSound != null)
+            {
+                _waveModeBackgroundSound.Stop();
+            }
+
             _gameState = GameState.LOSE;
             StopGame();
             _loseWindow.gameObject.SetActive(true);
