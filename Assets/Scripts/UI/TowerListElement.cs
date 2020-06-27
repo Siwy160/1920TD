@@ -9,6 +9,10 @@ namespace Game.Assets.Scripts.UI
 {
     public class TowerListElement : MonoBehaviour
     {
+
+        [SerializeField]
+        private Image _image;
+
         [SerializeField]
         private TMP_Text _name;
 
@@ -38,6 +42,10 @@ namespace Game.Assets.Scripts.UI
 
         private AudioSource _buySound;
 
+        public void SetAvatar(Sprite avatar)
+        {
+            _image.sprite = avatar;
+        }
         public void SetName(string name)
         {
             _name.text = name;

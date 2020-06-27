@@ -44,6 +44,7 @@ namespace Game.Assets.Scripts.UI
             foreach (TowerData tower in towers)
             {
                 TowerListElement element = CreateTowerElement();
+                element.SetAvatar(tower.Image);
                 element.SetName(tower.Name);
                 element.SetAttack(GetStatisticString(tower.Attak) + "i");
                 element.SetAttackSpeed(GetSpeedAttackString(tower.Attak) + "a");
