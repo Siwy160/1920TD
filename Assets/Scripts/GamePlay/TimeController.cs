@@ -99,18 +99,13 @@ namespace Game.Assets.Scripts.GamePlay
         {
             _buildingRemainingTime -= Time.deltaTime;
             int second = ((int)_buildingRemainingTime);
-            if (_previousSecond != second)
+            timePlaceholder.text = second.ToString();
+            if (_buildingRemainingTime <= 0f)
             {
-                Debug.Log("Play Second Music");
                 if (_secondSound != null)
                 {
                     _secondSound.Play();
                 }
-            }
-            _previousSecond = second;
-            timePlaceholder.text = second.ToString();
-            if (_buildingRemainingTime <= 0f)
-            {
                 timePlaceholder.text = "0";
                 OnWaveStarted();
             }
@@ -137,7 +132,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         private void HideTimer()
         {
-            _timerObject.transform.position = new Vector3(0f, 100f, 0f);
+            _timerObject.transform.position = new Vector3(0f, 1500f, 0f);
         }
 
         public void CountBuildingTime()

@@ -210,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4427174}
   - component: {fileID: 4427175}
+  - component: {fileID: 4427178}
   m_Layer: 5
   m_Name: Win Window
   m_TagString: Untagged
@@ -255,8 +256,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5003f8e21d9443d4d9294bcf2f5a46a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _exitSound: {fileID: 0}
-  _retrySound: {fileID: 0}
+  _exitSound: {fileID: 2031436040}
+  _retrySound: {fileID: 635287794}
+--- !u!82 &4427178
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4427173}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ace6ca063e68242fab818aa6f8c1451e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &4651201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
@@ -335,6 +432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -459,6 +561,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -467,7 +570,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 34899154}
   m_TextComponent: {fileID: 1124614540}
   m_materialReferenceIndex: 1
@@ -489,6 +592,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37541304}
   - component: {fileID: 37541305}
+  - component: {fileID: 37541308}
   m_Layer: 5
   m_Name: Lose Window
   m_TagString: Untagged
@@ -534,8 +638,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2658f99ddc4ad554eb4aae5187443488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _exitSound: {fileID: 0}
-  _retrySound: {fileID: 0}
+  _exitSound: {fileID: 2031436040}
+  _retrySound: {fileID: 635287794}
+--- !u!82 &37541308
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37541303}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7b6002afe0db7462c8fba11bdfe8b016, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &42828915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
@@ -614,6 +814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -1683,6 +1888,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &140392149
@@ -1751,6 +1961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -2043,6 +2258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &181251733
@@ -2111,6 +2331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -2211,6 +2436,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &217164334
@@ -2282,6 +2512,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73b114272f6d1fb47a14faf7ff36ade0, type: 3}
+--- !u!1001 &229616746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 546089392698869653, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_Name
+      value: MachineGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.538
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212974213936311650, guid: ff11c3f95cdd22946962f58bbeff85d1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff11c3f95cdd22946962f58bbeff85d1, type: 3}
 --- !u!4 &231816696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
@@ -2306,6 +2605,112 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 826471497}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &263735792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263735793}
+  - component: {fileID: 263735796}
+  - component: {fileID: 263735795}
+  - component: {fileID: 263735794}
+  m_Layer: 5
+  m_Name: Scroll View
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &263735793
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263735792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 783928161}
+  m_Father: {fileID: 1252761182}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.91, y: -9.65}
+  m_SizeDelta: {x: 363.34, y: 306.67}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &263735794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263735792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 2000946354}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 783928161}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 2
+  m_HorizontalScrollbarSpacing: -3
+  m_VerticalScrollbarSpacing: -3
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &263735795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263735792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9fb5dee0ae7629748a06dde380994b17, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &263735796
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263735792}
+  m_CullTransparentMesh: 0
 --- !u!1 &297556016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,6 +3007,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &317867347 stripped
@@ -2688,6 +3098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -2929,6 +3344,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3100,6 +3516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &371319437 stripped
@@ -3243,6 +3664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -3453,6 +3879,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3581,6 +4008,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3887,6 +4315,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.200606
       objectReference: {fileID: 0}
+    - target: {fileID: 2250709252956080735, guid: 3803b5e3542d2c743ab9c8cfe68c1d8b,
+        type: 3}
+      propertyPath: _onClickSound
+      value: 
+      objectReference: {fileID: 1421810484}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3803b5e3542d2c743ab9c8cfe68c1d8b, type: 3}
 --- !u!224 &435834565 stripped
@@ -4449,6 +4882,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4530,7 +4964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0eaa44f4523f7642bdef9e391eb6407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startBattleSound: {fileID: 0}
+  _startBattleSound: {fileID: 1504273940}
 --- !u!1001 &504658782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4603,6 +5037,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &505378324 stripped
@@ -4611,6 +5050,133 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 155949208}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &512214873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512214874}
+  - component: {fileID: 512214875}
+  m_Layer: 0
+  m_Name: Default
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512214874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512214873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1807981945}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &512214875
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512214873}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 32dc6dd2e189a4962a777f83041666ad, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &512869316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3176602696509859485, guid: b5219f3301c13594fbf3eb7e28f4f595,
@@ -4690,6 +5256,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &533349735
@@ -4758,6 +5329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -4963,6 +5539,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &550417978
@@ -5031,6 +5612,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -5383,6 +5969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &575071076 stripped
@@ -5463,6 +6054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -5585,6 +6181,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5801,6 +6398,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &624822511 stripped
@@ -5875,6 +6477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -5957,8 +6564,140 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
+--- !u!1 &635287792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635287793}
+  - component: {fileID: 635287794}
+  m_Layer: 0
+  m_Name: Retry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635287793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635287792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1807981945}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &635287794
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635287792}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: dc315e762ef8a4abc969354ac013b361, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &644992294 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
@@ -6032,6 +6771,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &661157282 stripped
@@ -6098,6 +6842,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6106,7 +6851,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 664648866}
   m_TextComponent: {fileID: 1803616392}
   m_materialReferenceIndex: 1
@@ -6184,6 +6929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6322,6 +7072,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6466,6 +7221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -6759,6 +7519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &760161652 stripped
@@ -6903,8 +7668,102 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
+--- !u!1 &783928160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 783928161}
+  - component: {fileID: 783928164}
+  - component: {fileID: 783928163}
+  - component: {fileID: 783928162}
+  m_Layer: 5
+  m_Name: Viewport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &783928161
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783928160}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2000946354}
+  m_Father: {fileID: 263735793}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 3.869995, y: -20.78}
+  m_SizeDelta: {x: -8.9, y: -27.1}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &783928162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783928160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &783928163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783928160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 10d5919e303797648b432451a4544a8e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &783928164
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783928160}
+  m_CullTransparentMesh: 0
 --- !u!1 &792809787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,6 +7871,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7140,6 +8000,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7228,6 +8089,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &806975256 stripped
@@ -7302,6 +8168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -7531,6 +8402,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &825619577
@@ -7668,6 +8544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -7820,7 +8701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clickButtonSound: {fileID: 0}
-  shopWindow: {fileID: 1061224225}
 --- !u!4 &834200073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
@@ -7893,6 +8773,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -8173,6 +9058,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &874229861 stripped
@@ -8340,6 +9230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -8562,6 +9457,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8704,6 +9600,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8712,7 +9609,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 954228173}
   m_TextComponent: {fileID: 1364680077}
   m_materialReferenceIndex: 1
@@ -8785,7 +9682,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 959737061}
   m_TextComponent: {fileID: 1466232776}
   m_materialReferenceIndex: 1
@@ -8836,7 +9733,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973159179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -12.00009}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.820093, y: 1.8200926, z: 1.8200926}
   m_Children: []
   m_Father: {fileID: 1061224226}
@@ -8964,7 +9861,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988429097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.49}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1061224226}
@@ -9252,6 +10149,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9433,6 +10331,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &1060994757 stripped
@@ -9542,6 +10445,7 @@ RectTransform:
   - {fileID: 1885401844}
   - {fileID: 973159180}
   - {fileID: 988429098}
+  - {fileID: 1252761182}
   m_Father: {fileID: 1182964625}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9563,6 +10467,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _exitButtonClickedSound: {fileID: 0}
+  _content: {fileID: 2000946353}
+  _elementPrefab: {fileID: 7046992196179939862, guid: bda60df0fa64ecc4eb0b0f3e3db76632,
+    type: 3}
+  _scrollRect: {fileID: 0}
 --- !u!1 &1063562701
 GameObject:
   m_ObjectHideFlags: 0
@@ -10064,6 +10972,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10235,6 +11144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1128583743
@@ -10361,8 +11275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee6ab9f1f627da43b2b75eded35bc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cancelButtonSound: {fileID: 0}
-  _confirmButtonClicked: {fileID: 0}
+  _cancelButtonSound: {fileID: 2031436040}
+  _confirmButtonClicked: {fileID: 512214875}
 --- !u!4 &1146926795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
@@ -10435,6 +11349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -10615,6 +11534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waveStartSound: {fileID: 0}
   _waveEndSound: {fileID: 0}
+  _spotSelector: {fileID: 1168246678}
+  _turretSpawner: {fileID: 1298146160}
   _healthController: {fileID: 695264627}
   _moneyController: {fileID: 948588430}
   _timeController: {fileID: 2059306165}
@@ -10624,6 +11545,9 @@ MonoBehaviour:
   _winWindow: {fileID: 4427175}
   _startWindow: {fileID: 498854137}
   _loseWindow: {fileID: 37541305}
+  _shopWindow: {fileID: 1061224227}
+  _shopButton: {fileID: 833561378}
+  _turretSpotsController: {fileID: 1298146159}
   _gamePlay:
     _player:
       _money:
@@ -10631,10 +11555,61 @@ MonoBehaviour:
         _moneyPerSecond: 5
       _startHealth: 20
     _timerData:
-      _buildingTime: 1
+      _buildingTime: 3
+    _towerData:
+      _towers:
+      - image: {fileID: 21300000, guid: bcfaa5bf91ade4f4b9a818d864fa68d3, type: 3}
+        _prefab: {fileID: 546089392698869653, guid: ff11c3f95cdd22946962f58bbeff85d1,
+          type: 3}
+        name: Awesome Tower
+        _price: 50
+        _attak: 1
+        _attakSpeed: 2
+        _range: 0
+      - image: {fileID: 21300000, guid: bcfaa5bf91ade4f4b9a818d864fa68d3, type: 3}
+        _prefab: {fileID: 546089392698869653, guid: ff11c3f95cdd22946962f58bbeff85d1,
+          type: 3}
+        name: 'Karabin '
+        _price: 250
+        _attak: 0
+        _attakSpeed: 0
+        _range: 0
+      - image: {fileID: 21300000, guid: bcfaa5bf91ade4f4b9a818d864fa68d3, type: 3}
+        _prefab: {fileID: 546089392698869653, guid: ff11c3f95cdd22946962f58bbeff85d1,
+          type: 3}
+        name: Renault FT
+        _price: 1250
+        _attak: 1
+        _attakSpeed: 2
+        _range: 1
+      - image: {fileID: 21300000, guid: bcfaa5bf91ade4f4b9a818d864fa68d3, type: 3}
+        _prefab: {fileID: 546089392698869653, guid: ff11c3f95cdd22946962f58bbeff85d1,
+          type: 3}
+        name: Snajper
+        _price: 250
+        _attak: 1
+        _attakSpeed: 1
+        _range: 1
+      - image: {fileID: 21300000, guid: bcfaa5bf91ade4f4b9a818d864fa68d3, type: 3}
+        _prefab: {fileID: 546089392698869653, guid: ff11c3f95cdd22946962f58bbeff85d1,
+          type: 3}
+        name: "Dzia\u0142o"
+        _price: 2000
+        _attak: 2
+        _attakSpeed: 2
+        _range: 1
     wavesData:
       waves:
       - enemies:
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
         - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
       - enemies:
         - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
@@ -10895,7 +11870,7 @@ Canvas:
   m_GameObject: {fileID: 1182964621}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 4367475987115263846}
   m_PlaneDistance: 1
   m_PixelPerfect: 0
@@ -11103,6 +12078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1199927530
@@ -11301,6 +12281,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11545,6 +12526,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1553c0c81381c364e842ead500ec7914, type: 3}
+--- !u!1 &1252761181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252761182}
+  m_Layer: 5
+  m_Name: List
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1252761182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252761181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 263735793}
+  m_Father: {fileID: 1061224226}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -10, y: -19.9}
+  m_SizeDelta: {x: 337.3, y: 280.3}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1255395057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6240932764133680263, guid: ead296274f1ee4840a954e64c4be3a62,
@@ -11603,6 +12620,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11657,6 +12675,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1298146158}
+  - component: {fileID: 1298146160}
+  - component: {fileID: 1298146159}
   m_Layer: 0
   m_Name: turretSpots
   m_TagString: Untagged
@@ -11672,7 +12692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298146157}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.028079748, y: 0.026194572, z: -0.009063482}
+  m_LocalPosition: {x: -0.028079748, y: 0.35, z: -0.009063482}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1534329501}
@@ -11735,6 +12755,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1298146159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298146157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651c6618b01b3a842b71fea408bacfe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1298146160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298146157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf0790d9444b7c4b93b41955df80d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1304293898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 653270301687917895, guid: 4995672505748964bac77eaf23a416ff,
@@ -11906,6 +12950,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1351512202
@@ -11974,6 +13023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -12044,6 +13098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1 &1364680075
@@ -12099,6 +13158,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12509,6 +13569,108 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb7a7f9d395af0149b1faff53c97f293, type: 3}
+--- !u!1 &1421810482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2250709252956080720, guid: 3803b5e3542d2c743ab9c8cfe68c1d8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 435834564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1421810484
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421810482}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 16fc60248c4aa4237a0e8215011fbaa9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1434210272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12575,6 +13737,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -12800,6 +13967,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13046,6 +14214,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13161,6 +14330,133 @@ Transform:
   m_Father: {fileID: 458404975}
   m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1504273938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504273939}
+  - component: {fileID: 1504273940}
+  m_Layer: 0
+  m_Name: Start_battle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504273939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504273938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1807981945}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1504273940
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504273938}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1334c298d79d34e5eae912cb7bfae73f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1504867917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13590,6 +14886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1546405843
@@ -13768,6 +15069,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13776,7 +15078,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 1562533850}
   m_TextComponent: {fileID: 1626343614}
   m_materialReferenceIndex: 1
@@ -14031,7 +15333,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 435834564}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1421810482}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -14182,6 +15484,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14190,7 +15493,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 1625105558}
   m_TextComponent: {fileID: 1626343614}
   m_materialReferenceIndex: 2
@@ -14256,6 +15559,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14425,6 +15729,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14433,7 +15738,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 1631231635}
   m_TextComponent: {fileID: 297556018}
   m_materialReferenceIndex: 2
@@ -14509,6 +15814,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -14603,6 +15909,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!4 &1649668042 stripped
@@ -14672,7 +15983,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 1650009523}
   m_TextComponent: {fileID: 297556018}
   m_materialReferenceIndex: 1
@@ -14831,6 +16142,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -15701,6 +17017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1741771591
@@ -15850,7 +17171,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 1.25
+  m_padding: 8.5625
   m_canvasRenderer: {fileID: 1746623594}
   m_TextComponent: {fileID: 1110469798}
   m_materialReferenceIndex: 1
@@ -16144,6 +17465,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -16255,6 +17577,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1546405843}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1807981944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807981945}
+  m_Layer: 0
+  m_Name: Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807981945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807981944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.512, y: 7.415074, z: 8.39918}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2031436039}
+  - {fileID: 635287793}
+  - {fileID: 512214874}
+  - {fileID: 1504273939}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1826317249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4009253874309451271, guid: 6ba106e3f37a05a42ab1449a4560ced1,
@@ -16327,6 +17683,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -16553,6 +17914,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1875817285
@@ -16621,6 +17987,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -16703,6 +18074,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &1883475113
@@ -16776,6 +18152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -16851,6 +18232,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -17311,6 +18697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1 &1973773154
@@ -17405,12 +18796,215 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1464507748882017173}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2000946353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000946354}
+  - component: {fileID: 2000946356}
+  - component: {fileID: 2000946355}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2000946354
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000946353}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 783928161}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 346, y: 0}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &2000946355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000946353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &2000946356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000946353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 3
+  m_Spacing: -15
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
 --- !u!4 &2005634040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
     type: 3}
   m_PrefabInstance: {fileID: 1875817285}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2031436038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031436039}
+  - component: {fileID: 2031436040}
+  m_Layer: 0
+  m_Name: Exit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2031436039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031436038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1807981945}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2031436040
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031436038}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a2bbea706d1ae4dc4bfb80b5d6f43973, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2031779375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17477,6 +19071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -17626,6 +19225,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &2044364982
@@ -17764,6 +19368,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretSpot (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
 --- !u!1001 &2057285197
@@ -17845,6 +19454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059306164}
   - component: {fileID: 2059306165}
+  - component: {fileID: 2059306166}
   m_Layer: 5
   m_Name: 'Time '
   m_TagString: Untagged
@@ -17885,9 +19495,105 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9494e1db9c3274183d6534f453aa82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _secondSound: {fileID: 0}
+  _secondSound: {fileID: 2059306166}
   _timerObject: {fileID: 2059306163}
   timePlaceholder: {fileID: 1466232776}
+--- !u!82 &2059306166
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059306163}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3573272b79cd7462482be3117f34402e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2062590718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17954,6 +19660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TurretSpot (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760990752278718326, guid: ec2eb45b65d641a45affae0a3756b5df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Spot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2eb45b65d641a45affae0a3756b5df, type: 3}
@@ -18439,85 +20150,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 45.000004, y: 37.988003, z: 90.00001}
---- !u!1001 &1341977890681480655
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: enemyTag
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975976631331409703, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_Name
-      value: Turret
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975976631331409703, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.726
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.507
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c, type: 3}
 --- !u!1001 &1374920441666837584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18716,7 +20348,7 @@ PrefabInstance:
     - target: {fileID: 3363685955045556582, guid: 8c7ed53db95d6744e97732409cd4afe6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3363685955045556582, guid: 8c7ed53db95d6744e97732409cd4afe6,
         type: 3}
@@ -18959,7 +20591,7 @@ PrefabInstance:
     - target: {fileID: 3716449718790888271, guid: 594db603359e964438232b3d109fbb71,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3716449718790888271, guid: 594db603359e964438232b3d109fbb71,
         type: 3}

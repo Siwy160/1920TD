@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7523240017766229887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546089392698869653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab113f270b3ff745b956522be47583d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 10
 --- !u!1001 &4799184676164700338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34,7 +21,7 @@ PrefabInstance:
         type: 3}
       propertyPath: audioSourcePool
       value: 
-      objectReference: {fileID: -7523240017766229887}
+      objectReference: {fileID: 2578405996703564616}
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: shootSounds.Array.data[0].sound
@@ -127,18 +114,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c, type: 3}
---- !u!1 &546089392698869653 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4975976631331409703, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4799184676164700338}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1212974213936311650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5931091827916170704, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
     type: 3}
   m_PrefabInstance: {fileID: 4799184676164700338}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2578405996703564616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7012799094452866042, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4799184676164700338}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab113f270b3ff745b956522be47583d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2834558917522708433 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7335309739687993187, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
@@ -232,6 +225,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MachineGunMovingPart
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 22b63fa3c02134745a579a1cc5358408,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22b63fa3c02134745a579a1cc5358408, type: 3}
 --- !u!1001 &7815395758756570416
@@ -320,6 +318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MachineGunStand
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1f3951ca5f212984cb51e84534c579dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f3951ca5f212984cb51e84534c579dc, type: 3}

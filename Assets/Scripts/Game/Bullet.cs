@@ -28,11 +28,11 @@ public class Bullet : MonoBehaviour
 
     void OnObjectHit(GameObject target)
     {
-        GameObject particle = Instantiate(particleEffect, gameObject.transform.position, gameObject.transform.rotation);
-        Destroy(particle, 2f);
-        Destroy(gameObject);
         if (target.tag == EnemyTag)
         {
+            GameObject particle = Instantiate(particleEffect, gameObject.transform.position, gameObject.transform.rotation);
+            Destroy(particle, 2f);
+            Destroy(gameObject);
             target.GetComponent<Enemy>().OnHit(Damage);
         }
     }
