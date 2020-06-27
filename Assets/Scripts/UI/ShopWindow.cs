@@ -14,6 +14,9 @@ namespace Game.Assets.Scripts.UI
         private AudioSource _exitButtonClickedSound;
 
         [SerializeField]
+        private AudioSource _buyIconClickedSound;
+
+        [SerializeField]
         private GameObject _content;
 
         [SerializeField]
@@ -47,6 +50,7 @@ namespace Game.Assets.Scripts.UI
                 element.SetRange(GetStatisticString(tower.Attak) + "i");
                 element.SetPrice(tower.Price);
                 element.Listener = listener;
+                element.BuySound = _buyIconClickedSound;
                 element.Data = tower;
                 elements.Add(element);
             }
