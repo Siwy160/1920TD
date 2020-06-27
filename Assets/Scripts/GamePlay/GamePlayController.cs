@@ -8,7 +8,8 @@ namespace Game.Assets.Scripts.GamePlay
     using UnityEngine;
 
     public class GamePlayController : MonoBehaviour, TimeControllerListener, WaveSpawnerListener,
-     MapControllerListener, RetryListener, StartBattleListener, EnemyListener, HealthListener, ShopButtonListener
+     MapControllerListener, RetryListener, StartBattleListener, EnemyListener, HealthListener, ShopButtonListener,
+      SpotListener, ShopBuyListener, ShopWindowListener
     {
 
         [SerializeField]
@@ -16,6 +17,12 @@ namespace Game.Assets.Scripts.GamePlay
 
         [SerializeField]
         private AudioSource _waveEndSound;
+
+        [SerializeField]
+        private TurretSpotSelector _spotSelector;
+
+        [SerializeField]
+        private TurretSpawner _turretSpawner;
 
         [SerializeField]
         private HealthController _healthController;
@@ -51,6 +58,9 @@ namespace Game.Assets.Scripts.GamePlay
         private ShopButton _shopButton;
 
         [SerializeField]
+        private TurretSpotsController _turretSpotsController;
+
+        [SerializeField]
         private GamePlayData _gamePlay;
 
         private WavesController _wavesController;
@@ -63,6 +73,7 @@ namespace Game.Assets.Scripts.GamePlay
             InitializeHealthController();
             InitializeMoneyController();
             InitializeTimer();
+            InitializeTuretSpotsController();
             InitializeWaveSpawner();
             InitializeMapController();
             InitializeWinWindow();
@@ -70,6 +81,18 @@ namespace Game.Assets.Scripts.GamePlay
             InitializeLoseWindow();
             InitializeShopWindow();
             ShowStartWindow();
+        }
+
+        private void InitializeTowerSpawner()
+        {
+            _turretSpawner.Restart();
+            _turretSpotsController.Restart();
+        }
+
+        private void InitializeTuretSpotsController()
+        {
+            _turretSpotsController.Initialize(this);
+            _turretSpawner.Restart();
         }
 
         private void InitializeHealthController()
@@ -116,7 +139,8 @@ namespace Game.Assets.Scripts.GamePlay
         private void InitializeShopWindow()
         {
             _shopButton.Listener = this;
-            _shopWindow.Initialize(_gamePlay.TowerData.Towers);
+            _shopWindow.Initialize(_gamePlay.TowerData.Towers, this);
+            _shopWindow.Listener = this;
         }
 
         private void ShowStartWindow()
@@ -139,7 +163,7 @@ namespace Game.Assets.Scripts.GamePlay
                 {
                     _waveStartSound.Play();
                 }
-
+                _turretSpawner.TowerToSpawn = null;
                 _waveSpawner.StartWave(waveData, this);
             }
         }
@@ -190,6 +214,8 @@ namespace Game.Assets.Scripts.GamePlay
         public void Retry()
         {
             _gameState = GameState.IDLE;
+            _turretSpotsController.Restart();
+            _turretSpawner.Restart();
             _healthController.Restart(_gamePlay.Player.StartHealth);
             _moneyController.Restart(_gamePlay.Player.Money.MoneyAtStart);
             _userInterface.Restart();
@@ -224,8 +250,36 @@ namespace Game.Assets.Scripts.GamePlay
 
         public void ShowShopWindow()
         {
+            _spotSelector.Disable();
             _shopWindow.RefreshList(_moneyController.Money);
             _shopWindow.gameObject.SetActive(true);
+        }
+
+        public void OnSpotSelected(TurretSpot spot)
+        {
+            TowerData data = _turretSpawner.TowerToSpawn;
+            Debug.Log("Spot selected " + data);
+            if (data != null && !spot.IsSelected)
+            {
+                Debug.Log("Building tower");
+                _moneyController.SubstractMoney(data.Price);
+                spot.IsSelected = true;
+                _turretSpawner.SpawnTower(spot.gameObject);
+                _turretSpawner.TowerToSpawn = null;
+            }
+
+        }
+
+        public void OnTowerBuyClicked(TowerData tower)
+        {
+            _turretSpawner.TowerToSpawn = tower;
+            _spotSelector.Enable();
+            _shopWindow.gameObject.SetActive(false);
+        }
+
+        public void OnCloseShopWindow()
+        {
+            _spotSelector.Enable();
         }
     }
 }

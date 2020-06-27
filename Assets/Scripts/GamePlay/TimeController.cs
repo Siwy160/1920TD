@@ -132,7 +132,7 @@ namespace Game.Assets.Scripts.GamePlay
 
         private void HideTimer()
         {
-            _timerObject.transform.position = new Vector3(0f, 100f, 0f);
+            _timerObject.transform.position = new Vector3(0f, 1500f, 0f);
         }
 
         public void CountBuildingTime()

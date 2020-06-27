@@ -164,7 +164,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1576626353460132559, guid: 9f654a5c11ed611429a643c71bc605f3,
     type: 3}
   firePoint: {fileID: 8618043887790635521}
-  enemyTag: EnemyTag
+  enemyTag: Enemy
 --- !u!1 &5027802497959124982
 GameObject:
   m_ObjectHideFlags: 0
