@@ -4311,6 +4311,11 @@ PrefabInstance:
       propertyPath: _onClickSound
       value: 
       objectReference: {fileID: 1421810484}
+    - target: {fileID: 2250709252956080735, guid: 3803b5e3542d2c743ab9c8cfe68c1d8b,
+        type: 3}
+      propertyPath: _settings
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3803b5e3542d2c743ab9c8cfe68c1d8b, type: 3}
 --- !u!224 &435834565 stripped
