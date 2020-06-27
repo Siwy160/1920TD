@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turret : MonoBehaviour
+public class Turret : HittableObject
 {
+    [SerializeField] private Sound[] shootSounds;
+
     [Header("Stats")]
     public float range = 8f;
     public float rotationSpeed = 1f;
@@ -13,7 +15,6 @@ public class Turret : MonoBehaviour
 
     [Header("Unity stuff")]
     public Transform partToRotate;
-    public Transform barrel;
     public GameObject bulletPrefab;
     public Transform firePoint;
 
@@ -24,6 +25,7 @@ public class Turret : MonoBehaviour
 
     void Start()
     {
+        base.Start();
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -74,6 +76,7 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
+        PlayRandomSound(shootSounds);
         Vector3 direction = target.position - partToRotate.position;
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         GameObject bulletObject = GameObject.Instantiate(bulletPrefab, firePoint.position, lookRotation);

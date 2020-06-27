@@ -8,7 +8,7 @@ public class TurretSpotSelector : MonoBehaviour
 
     private TurretSpot[] turretSpots;
 
-    // Start is called before the first frame update
+    private bool disabled = false;
     void Start()
     {
         turretSpots = turretSpotParent.GetComponentsInChildren<TurretSpot>();
@@ -18,24 +18,37 @@ public class TurretSpotSelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!disabled)
         {
-            RaycastHit raycast;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out raycast))
+            if (Input.GetMouseButtonDown(0))
             {
-                foreach (TurretSpot turretSpot in turretSpots)
+                RaycastHit raycast;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out raycast))
                 {
-                    if (turretSpot.transform == raycast.transform)
+                    foreach (TurretSpot turretSpot in turretSpots)
                     {
-                        turretSpot.Clicked();
-                    }
-                    else
-                    {
-                        turretSpot.Deselect();
+                        if (turretSpot.transform == raycast.transform)
+                        {
+                            turretSpot.Clicked();
+                        }
+                        else
+                        {
+                            turretSpot.Deselect();
+                        }
                     }
                 }
             }
         }
+    }
+
+    public void Disable()
+    {
+        disabled = true;
+    }
+
+    public void Enable()
+    {
+        disabled = false;
     }
 }

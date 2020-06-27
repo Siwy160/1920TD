@@ -23,7 +23,7 @@ namespace Game.Assets.Scripts.UI
         public void HideShop()
         {
             _shopWindow.SetActive(false);
-            _shopIcon.transform.position = new Vector3(0, 100, 0);
+            _shopIcon.transform.position = new Vector3(0, 1500, 0);
         }
 
         public void ShowShop()
