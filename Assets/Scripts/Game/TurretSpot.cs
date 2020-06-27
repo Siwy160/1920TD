@@ -29,6 +29,8 @@ public class TurretSpot : MonoBehaviour
     internal void Clicked()
     {
         spotRenderer.material = selectedColor;
+        Debug.Log("Spot selected");
+
         if (_listener != null)
         {
             _listener.OnSpotSelected(this);
