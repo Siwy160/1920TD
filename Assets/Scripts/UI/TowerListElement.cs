@@ -9,6 +9,10 @@ namespace Game.Assets.Scripts.UI
 {
     public class TowerListElement : MonoBehaviour
     {
+
+        [SerializeField]
+        private Image _image;
+
         [SerializeField]
         private TMP_Text _name;
 
@@ -34,7 +38,14 @@ namespace Game.Assets.Scripts.UI
         public TowerData Data { get => _data; set => _data = value; }
 
         public ShopBuyListener Listener { set => _listener = value; }
+        public AudioSource BuySound { set => _buySound = value; }
 
+        private AudioSource _buySound;
+
+        public void SetAvatar(Sprite avatar)
+        {
+            _image.sprite = avatar;
+        }
         public void SetName(string name)
         {
             _name.text = name;
@@ -74,6 +85,10 @@ namespace Game.Assets.Scripts.UI
         {
             if (_listener != null)
             {
+                if (_buySound != null)
+                {
+                    _buySound.Play();
+                }
                 _listener.OnTowerBuyClicked(_data);
             }
         }

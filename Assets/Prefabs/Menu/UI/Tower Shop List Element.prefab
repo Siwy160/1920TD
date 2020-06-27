@@ -1490,6 +1490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad76cd0c7674154585aa3354e88b3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _image: {fileID: 2095129928}
   _name: {fileID: 5995011036725155540}
   _range: {fileID: 7849311965403230213}
   _attack: {fileID: 7984851951162195871}

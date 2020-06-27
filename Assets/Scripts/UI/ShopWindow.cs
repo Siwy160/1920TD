@@ -14,6 +14,9 @@ namespace Game.Assets.Scripts.UI
         private AudioSource _exitButtonClickedSound;
 
         [SerializeField]
+        private AudioSource _buyIconClickedSound;
+
+        [SerializeField]
         private GameObject _content;
 
         [SerializeField]
@@ -41,12 +44,14 @@ namespace Game.Assets.Scripts.UI
             foreach (TowerData tower in towers)
             {
                 TowerListElement element = CreateTowerElement();
+                element.SetAvatar(tower.Image);
                 element.SetName(tower.Name);
                 element.SetAttack(GetStatisticString(tower.Attak) + "i");
                 element.SetAttackSpeed(GetSpeedAttackString(tower.Attak) + "a");
                 element.SetRange(GetStatisticString(tower.Attak) + "i");
                 element.SetPrice(tower.Price);
                 element.Listener = listener;
+                element.BuySound = _buyIconClickedSound;
                 element.Data = tower;
                 elements.Add(element);
             }

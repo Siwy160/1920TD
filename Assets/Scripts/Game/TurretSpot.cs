@@ -9,7 +9,6 @@ public class TurretSpot : MonoBehaviour
     private Renderer spotRenderer;
     private SpotListener _listener;
     private bool isSelected = false;
-
     public SpotListener Listener { set => _listener = value; }
     public bool IsSelected { get => isSelected; set => isSelected = value; }
 
