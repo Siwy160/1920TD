@@ -96,6 +96,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.data[0].sound
+      value: 
+      objectReference: {fileID: 8300000, guid: f553b6f0626fe4b8fbd9fb3c05f4adcd, type: 3}
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.data[0].volume
+      value: 0.744
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.data[0].spatialBlend
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4975976631331409703, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: m_Name
