@@ -289,7 +289,7 @@ PrefabInstance:
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: shootSounds.Array.data[0].spatialBlend
-      value: 0.256
+      value: 0.193
       objectReference: {fileID: 0}
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}

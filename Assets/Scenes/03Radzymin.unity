@@ -8196,7 +8196,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 693fd357687c546f397dbe60a30cc2ff, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.42
+  m_Volume: 0.311
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11814,7 +11814,7 @@ MonoBehaviour:
         _moneyPerSecond: 5
       _startHealth: 20
     _timerData:
-      _buildingTime: 10
+      _buildingTime: 30
     _towerData:
       _towers:
       - image: {fileID: 21300000, guid: 8d362b53f877fec4e86306f2527863b6, type: 3}
@@ -11850,7 +11850,7 @@ MonoBehaviour:
         _attakSpeed: 1
         _range: 1
       - image: {fileID: 21300000, guid: bcfaa5bf91ade4f4b9a818d864fa68d3, type: 3}
-        _prefab: {fileID: 6925934191906999259, guid: f310d652c2843e7489b1a0b92ac1ea04,
+        _prefab: {fileID: 3269865038073185573, guid: 2367f4df25b66f940b5a77bcb93d8e7d,
           type: 3}
         name: "Dzia\u0142o"
         _price: 2000
