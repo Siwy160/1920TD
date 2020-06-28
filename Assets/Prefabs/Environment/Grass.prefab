@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7187357841744669583}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,6 +117,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 745513f8f94d9864bb4327257be1dcba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 745513f8f94d9864bb4327257be1dcba, type: 3}
