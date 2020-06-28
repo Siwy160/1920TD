@@ -41,4 +41,14 @@ public class TurretSpot : MonoBehaviour
     {
         spotRenderer.material = initialColor;
     }
+
+    public void Hide()
+    {
+        spotRenderer.enabled = false;
+    }
+
+    public void Show()
+    {
+        spotRenderer.enabled = true;
+    }
 }

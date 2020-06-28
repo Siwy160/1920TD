@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: -1929037744384178376}
   m_Layer: 0
   m_Name: TurretSpot
-  m_TagString: Untagged
+  m_TagString: Spot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,4 +137,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c52fa77597d9a4c95bd002a87af7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hideMaterial: {fileID: 2100000, guid: 76fc29242467bfe4e9267286427f4f0d, type: 2}
   selectedColor: {fileID: 2100000, guid: 032d17221f34fa645865e29b29676c62, type: 2}

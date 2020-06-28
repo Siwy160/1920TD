@@ -99,6 +99,7 @@ namespace Game.Assets.Scripts.GamePlay
         {
             _turretSpotsController.Initialize(this);
             _turretSpawner.Restart();
+            _turretSpotsController.DisableSpots();
         }
 
         private void InitializeHealthController()
@@ -162,6 +163,7 @@ namespace Game.Assets.Scripts.GamePlay
         public void StartWave()
         {
             _userInterface.HideShop();
+            _turretSpotsController.DisableSpots();
             if (_buildingModeBackgroundSound != null)
             {
                 _buildingModeBackgroundSound.Stop();
@@ -312,6 +314,7 @@ namespace Game.Assets.Scripts.GamePlay
                 spot.IsSelected = true;
                 _turretSpawner.SpawnTower(spot.gameObject);
                 _turretSpawner.TowerToSpawn = null;
+                _turretSpotsController.DisableSpots();
             }
 
         }
@@ -321,6 +324,7 @@ namespace Game.Assets.Scripts.GamePlay
             _turretSpawner.TowerToSpawn = tower;
             _spotSelector.Enable();
             _shopWindow.gameObject.SetActive(false);
+            _turretSpotsController.EnableSpots();
         }
 
         public void OnCloseShopWindow()
