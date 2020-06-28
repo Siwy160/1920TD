@@ -9370,7 +9370,7 @@ PrefabInstance:
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.1190634
+      value: 5.271
       objectReference: {fileID: 0}
     - target: {fileID: 1912956871659628339, guid: ec2eb45b65d641a45affae0a3756b5df,
         type: 3}
@@ -13496,7 +13496,7 @@ MonoBehaviour:
       - image: {fileID: 21300000, guid: f031aa3eb27f04847b557e71edb29249, type: 3}
         _prefab: {fileID: 7379377846025781249, guid: 7212cd14aeeef09448487412d8e4e315,
           type: 3}
-        name: Armostrong
+        name: Armstrong
         _price: 185
         _attak: 1
         _attakSpeed: 2
@@ -21025,7 +21025,7 @@ PrefabInstance:
     - target: {fileID: 9089005042844610408, guid: 30e4a4516ab02e14a8ff830b952ec289,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.14
+      value: -13.11
       objectReference: {fileID: 0}
     - target: {fileID: 9089005042844610408, guid: 30e4a4516ab02e14a8ff830b952ec289,
         type: 3}
@@ -21035,7 +21035,7 @@ PrefabInstance:
     - target: {fileID: 9089005042844610408, guid: 30e4a4516ab02e14a8ff830b952ec289,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.2599998
+      value: 5.488
       objectReference: {fileID: 0}
     - target: {fileID: 9089005042844610408, guid: 30e4a4516ab02e14a8ff830b952ec289,
         type: 3}

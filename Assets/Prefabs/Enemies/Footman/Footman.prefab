@@ -244,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: speed
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
@@ -765,6 +765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: hitReceivedSounds.Array.data[9].spatialBlend
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
+        type: 3}
+      propertyPath: health
+      value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -4660144324413457782, guid: f4c6e4ff9f502844d98e3fec62d9dde5, type: 3}
