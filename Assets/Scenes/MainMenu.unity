@@ -302,7 +302,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 50
-  field of view: 16.532024
+  field of view: 16.532026
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1223,6 +1223,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1822,7 +1823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1109145008, guid: fdf3630aac645334ab1650ad800e3509, type: 3}
       propertyPath: m_Volume
-      value: 0.51
+      value: 0.377
       objectReference: {fileID: 0}
     - target: {fileID: 1109145008, guid: fdf3630aac645334ab1650ad800e3509, type: 3}
       propertyPath: m_audioClip
