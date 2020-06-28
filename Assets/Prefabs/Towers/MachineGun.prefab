@@ -106,7 +106,7 @@ PrefabInstance:
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: shootSounds.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
@@ -122,7 +122,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shootSounds.Array.data[0].sound
       value: 
-      objectReference: {fileID: 8300000, guid: f553b6f0626fe4b8fbd9fb3c05f4adcd, type: 3}
+      objectReference: {fileID: 8300000, guid: 4b0a972dc81424e8884c34e31352bbf9, type: 3}
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: shootSounds.Array.data[0].volume
@@ -137,15 +137,30 @@ PrefabInstance:
         type: 3}
       propertyPath: shootSounds.Array.data[1].sound
       value: 
-      objectReference: {fileID: 8300000, guid: f553b6f0626fe4b8fbd9fb3c05f4adcd, type: 3}
+      objectReference: {fileID: 8300000, guid: c9693e44ae8104dc6804938d943d848c, type: 3}
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: shootSounds.Array.data[1].volume
-      value: 1
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: shootSounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.data[2].sound
+      value: 
+      objectReference: {fileID: 8300000, guid: b81c3ad0b67df4ee4a263314fc088517, type: 3}
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.data[2].volume
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555751436294356296, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
+        type: 3}
+      propertyPath: shootSounds.Array.data[2].pitch
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4975976631331409703, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
@@ -211,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 7012799094452866042, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
       propertyPath: size
-      value: 1
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7335309739687993187, guid: ee6ffd8a447ab6c4da8672b0d9dfae2c,
         type: 3}
