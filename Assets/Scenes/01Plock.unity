@@ -13462,18 +13462,18 @@ MonoBehaviour:
   _gamePlay:
     _player:
       _money:
-        _moneyAtStart: 650
-        _moneyPerSecond: 5
-      _startHealth: 20
+        _moneyAtStart: 220
+        _moneyPerSecond: 2
+      _startHealth: 5
     _timerData:
-      _buildingTime: 30
+      _buildingTime: 10
     _towerData:
       _towers:
       - image: {fileID: 21300000, guid: 8d362b53f877fec4e86306f2527863b6, type: 3}
         _prefab: {fileID: 546089392698869653, guid: ff11c3f95cdd22946962f58bbeff85d1,
           type: 3}
         name: CMK
-        _price: 50
+        _price: 80
         _attak: 1
         _attakSpeed: 2
         _range: 0
@@ -13513,6 +13513,24 @@ MonoBehaviour:
       waves:
       - enemies:
         - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+      - enemies:
+        - {fileID: 2352500666499460421, guid: 02b830669b83b3d4c8c4bf246e3d1c6c, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 2352500666499460421, guid: 02b830669b83b3d4c8c4bf246e3d1c6c, type: 3}
+      - enemies:
+        - {fileID: 2352500666499460421, guid: 02b830669b83b3d4c8c4bf246e3d1c6c, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 5787650244421173770, guid: 2c1628e6d8c69a34b91794d952bcfa8d, type: 3}
+        - {fileID: 6925934191906999259, guid: f310d652c2843e7489b1a0b92ac1ea04, type: 3}
 --- !u!4 &1168246677
 Transform:
   m_ObjectHideFlags: 0
