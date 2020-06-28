@@ -24,7 +24,9 @@ namespace Game
             GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Spot");
             foreach (GameObject gameObject in gameObjects)
             {
-                _spots.Add(gameObject.GetComponent<TurretSpot>());
+                TurretSpot turretSpot = gameObject.GetComponent<TurretSpot>();
+                turretSpot.Initialize();
+                _spots.Add(turretSpot);
             }
         }
 
@@ -40,7 +42,10 @@ namespace Game
         {
             foreach (TurretSpot spot in _spots)
             {
-                spot.Hide();
+                if (spot != null)
+                {
+                    spot.Hide();
+                }
             }
         }
 
@@ -48,7 +53,10 @@ namespace Game
         {
             foreach (TurretSpot spot in _spots)
             {
-                spot.Show();
+                if (spot != null)
+                {
+                    spot.Show();
+                }
             }
         }
     }

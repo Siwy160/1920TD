@@ -12,8 +12,7 @@ public class TurretSpot : MonoBehaviour
     public SpotListener Listener { set => _listener = value; }
     public bool IsSelected { get => isSelected; set => isSelected = value; }
 
-    // Start is called before the first frame update
-    void Start()
+    public void Initialize()
     {
         spotRenderer = GetComponentInChildren<Renderer>();
         initialColor = spotRenderer.material;
@@ -44,11 +43,17 @@ public class TurretSpot : MonoBehaviour
 
     public void Hide()
     {
-        spotRenderer.enabled = false;
+        if (spotRenderer != null)
+        {
+            spotRenderer.enabled = false;
+        }
     }
 
     public void Show()
     {
-        spotRenderer.enabled = true;
+        if (spotRenderer != null)
+        {
+            spotRenderer.enabled = true;
+        }
     }
 }

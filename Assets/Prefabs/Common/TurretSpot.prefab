@@ -137,5 +137,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c52fa77597d9a4c95bd002a87af7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hideMaterial: {fileID: 2100000, guid: 76fc29242467bfe4e9267286427f4f0d, type: 2}
   selectedColor: {fileID: 2100000, guid: 032d17221f34fa645865e29b29676c62, type: 2}
