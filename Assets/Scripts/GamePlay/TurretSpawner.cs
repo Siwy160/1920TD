@@ -22,7 +22,7 @@ namespace GamePlay
                 }
 
                 GameObject tower = Instantiate(_towerToSpawn.Prefab);
-                tower.transform.parent = parent.transform;
+                // tower.transform.parent = parent.transform;
                 tower.transform.position = parent.transform.position;
             }
         }

@@ -10,11 +10,11 @@ namespace Game
 
         public void Initialize(SpotListener listener)
         {
-            Debug.Log("Set listener to turret spot");
             AddTurretsSpot();
             foreach (TurretSpot spot in _spots)
             {
                 spot.Listener = listener;
+
             }
             Restart();
         }
@@ -33,6 +33,22 @@ namespace Game
             foreach (TurretSpot spot in _spots)
             {
                 spot.IsSelected = false;
+            }
+        }
+
+        public void DisableSpots()
+        {
+            foreach (TurretSpot spot in _spots)
+            {
+                spot.Hide();
+            }
+        }
+
+        public void EnableSpots()
+        {
+            foreach (TurretSpot spot in _spots)
+            {
+                spot.Show();
             }
         }
     }
