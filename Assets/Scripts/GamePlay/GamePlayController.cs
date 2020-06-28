@@ -264,6 +264,15 @@ namespace Game.Assets.Scripts.GamePlay
         public void StartBattle()
         {
             _timeController.Resume();
+            if (_waveModeBackgroundSound != null)
+            {
+                _waveModeBackgroundSound.Stop();
+            }
+
+            if (_buildingModeBackgroundSound != null)
+            {
+                _buildingModeBackgroundSound.Play();
+            }
         }
 
         public void OnEnemyDead(int money)
