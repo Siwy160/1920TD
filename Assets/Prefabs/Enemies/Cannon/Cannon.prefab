@@ -394,7 +394,7 @@ PrefabInstance:
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
@@ -425,7 +425,7 @@ PrefabInstance:
         type: 3}
       propertyPath: movementSounds.Array.data[0].sound
       value: 
-      objectReference: {fileID: 8300000, guid: 23b0f25c582fea6489870b15c3a26fc6, type: 3}
+      objectReference: {fileID: 8300000, guid: 1554c0fce49324b198c0aba98481cf5e, type: 3}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[0].volume
@@ -474,6 +474,11 @@ PrefabInstance:
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: movementSounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
+        type: 3}
+      propertyPath: movementSounds.Array.data[0].spatialBlend
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:

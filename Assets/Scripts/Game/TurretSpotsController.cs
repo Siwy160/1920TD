@@ -10,11 +10,11 @@ namespace Game
 
         public void Initialize(SpotListener listener)
         {
-            Debug.Log("Set listener to turret spot");
             AddTurretsSpot();
             foreach (TurretSpot spot in _spots)
             {
                 spot.Listener = listener;
+
             }
             Restart();
         }
@@ -24,7 +24,9 @@ namespace Game
             GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("Spot");
             foreach (GameObject gameObject in gameObjects)
             {
-                _spots.Add(gameObject.GetComponent<TurretSpot>());
+                TurretSpot turretSpot = gameObject.GetComponent<TurretSpot>();
+                turretSpot.Initialize();
+                _spots.Add(turretSpot);
             }
         }
 
@@ -33,6 +35,28 @@ namespace Game
             foreach (TurretSpot spot in _spots)
             {
                 spot.IsSelected = false;
+            }
+        }
+
+        public void DisableSpots()
+        {
+            foreach (TurretSpot spot in _spots)
+            {
+                if (spot != null)
+                {
+                    spot.Hide();
+                }
+            }
+        }
+
+        public void EnableSpots()
+        {
+            foreach (TurretSpot spot in _spots)
+            {
+                if (spot != null)
+                {
+                    spot.Show();
+                }
             }
         }
     }

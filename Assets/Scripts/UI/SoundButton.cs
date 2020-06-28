@@ -1,3 +1,4 @@
+using Game.Assets.Scripts.Settings;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,21 +15,23 @@ namespace Game.Assets.Scripts.UI
 
         [SerializeField]
         private Sprite _soundOnSprite;
-
-        private bool isMuted = false;
+        private GameSettings _settings;
 
         private Button soundButton;
         private void Start()
         {
+            GameObject settingsObject = GameObject.FindGameObjectWithTag("Settings");
+            _settings = settingsObject.GetComponent<GameSettings>();
             soundButton = gameObject.GetComponent<Button>();
-            SwitchButtonMuteOption(false);
+            UpdateAudioListener(false);
         }
         public void OnSoundButtonClicked()
         {
-            SwitchButtonMuteOption(true);
+            _settings.SoundMuted = !_settings.SoundMuted;
+            UpdateAudioListener(true);
         }
 
-        private void SwitchButtonMuteOption(bool playSound)
+        private void UpdateAudioListener(bool playSound)
         {
             if (soundButton != null)
             {
@@ -36,19 +39,18 @@ namespace Game.Assets.Scripts.UI
                 {
                     _onClickSound.Play();
                 }
-
-                if (isMuted)
+                Debug.Log("Sound munted : " + _settings.SoundMuted);
+                if (_settings.SoundMuted)
                 {
                     AudioListener.volume = 0f;
                     soundButton.image.sprite = _muteSprite;
                 }
                 else
                 {
-                    AudioListener.volume = 1f;
+                    AudioListener.volume = _settings.Volume;
                     soundButton.image.sprite = _soundOnSprite;
 
                 }
-                isMuted = !isMuted;
             }
         }
     }

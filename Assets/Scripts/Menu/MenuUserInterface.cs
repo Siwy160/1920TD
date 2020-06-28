@@ -48,9 +48,23 @@ namespace Game.Assets.Scripts.Menu
 
         public void OnBattleStarted(BattleType type)
         {
-            if (type == BattleType.RADZYMIN)
+            switch (type)
             {
-                SceneManager.LoadScene("03Radzymin", LoadSceneMode.Single);
+                case BattleType.PLOCK:
+                    {
+                        SceneManager.LoadScene("01Plock", LoadSceneMode.Single);
+                        break;
+                    }
+                case BattleType.BORKOWO:
+                    {
+                        break;
+                    }
+                case BattleType.RADZYMIN:
+                    {
+                        SceneManager.LoadScene("03Radzymin", LoadSceneMode.Single);
+                        break;
+                    }
+
             }
         }
     }
