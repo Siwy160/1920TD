@@ -57,6 +57,7 @@ namespace Game.Assets.Scripts.Menu
                     }
                 case BattleType.BORKOWO:
                     {
+                        SceneManager.LoadScene("02Borkowo", LoadSceneMode.Single);
                         break;
                     }
                 case BattleType.RADZYMIN:
