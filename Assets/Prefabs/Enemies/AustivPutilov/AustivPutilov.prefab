@@ -330,7 +330,7 @@ PrefabInstance:
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: health
-      value: 250
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
@@ -425,7 +425,7 @@ PrefabInstance:
     - target: {fileID: 3570519892417224743, guid: f4c6e4ff9f502844d98e3fec62d9dde5,
         type: 3}
       propertyPath: money
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4c6e4ff9f502844d98e3fec62d9dde5, type: 3}
